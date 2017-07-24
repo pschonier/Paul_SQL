@@ -1,0 +1,61 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|                        FRx Install Assistant Log v6.7.5014                     |
+|                                                                                |
+|This file provides the details of the changes that were made by the FRx Install |
+|Assistant Program.  If errors occurred or the utility could not determine the   |
+|proper values to set in the new install, these items have been noted with an    |
+|[EXCEPTION] tag in the details below                                            |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+*** Upgrade Details ***
+-----------------------
+Destination FRx Version:   6.70
+Destination Data Location: C:\Program Files (x86)\FRx Software\FRx 6.7\SysData\
+Installation Path:         C:\Program Files (x86)\FRx Software\FRx 6.7\
+Execution Source:          Installation
+Execution Date & Time:     4/23/2013 4:28:03 PM
+
+SysData Type...LOCAL
+
+
+*** Validate Registration Data ***
+----------------------------------
+Registration is...UNREGISTERED - No Registration Changes Necessary
+Registration Validation...COMPLETED
+
+
+*** Validate Company ID Data ***
+--------------------------------
+Validated -1 companies...PASSED
+
+Validation...COMPLETED
+
+
+*** Installation Cleanup and Validation***
+------------------------------------------
+Deleting temporary install files...
+
+Updating Demo Spec Set Security Settings...COMPLETED
+
+PMM File...FOUND
+
+frxini32.tmp...INSTALLED
+
+prod32.tmp...INSTALLED
+
+lddemo.frx...CREATED
+
+Installation Cleanup and Validation ...COMPLETED
+
+
+----------------------------------------------------------------------------------
+
+Install Assist Procedure Completed Normally
+
+Exceptions Noted: 0
+Log File Location: C:\Program Files (x86)\FRx Software\FRx 6.7\SysData\LogFiles\InstallAssist04232013.log
+
+
+Upgrade Procedure...COMPLETED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

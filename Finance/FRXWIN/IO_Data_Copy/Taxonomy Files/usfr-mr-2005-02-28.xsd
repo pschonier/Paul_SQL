@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:usfr-mr="http://www.xbrl.org/us/fr/rpt/mr/2005-02-28" targetNamespace="http://www.xbrl.org/us/fr/rpt/mr/2005-02-28" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:href="usfr-mr-2005-02-28-presentation.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="usfr-mr-2005-02-28-labels.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Label Links, all" />
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd" />
+  <element id="usfr-mr_AuditCommitteeParagraph" name="AuditCommitteeParagraph" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_AuditorInformationParagraph" name="AuditorInformationParagraph" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_DetailOfficerInformation" name="DetailOfficerInformation" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_InternalControlMonitoringMaintenanceParagraph" name="InternalControlMonitoringMaintenanceParagraph" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_InternalControlOverviewParagraph" name="InternalControlOverviewParagraph" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_OfficerInformation" name="OfficerInformation" substitutionGroup="xbrli:tuple" nillable="true">
+    <complexType>
+      <complexContent>
+        <restriction base="anyType">
+          <sequence>
+            <element ref="usfr-mr:OfficerInformationName" minOccurs="0" maxOccurs="1" />
+            <element ref="usfr-mr:OfficerInformationTitlePosition" minOccurs="0" maxOccurs="1" />
+            <element ref="usfr-mr:OfficerInformationSignature" minOccurs="0" maxOccurs="1" />
+          </sequence>
+          <attribute name="id" type="ID" use="optional" />
+        </restriction>
+      </complexContent>
+    </complexType>
+  </element>
+  <element id="usfr-mr_OfficerInformationName" name="OfficerInformationName" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_OfficerInformationSignature" name="OfficerInformationSignature" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_OfficerInformationTitlePosition" name="OfficerInformationTitlePosition" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_OtherInformationParagraph" name="OtherInformationParagraph" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_ReportBody" name="ReportBody" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_ReportInformation" name="ReportInformation" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_ResponsibilityParagraph" name="ResponsibilityParagraph" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_TitleManagementReport" name="TitleManagementReport" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+  <element id="usfr-mr_TitleReport" name="TitleReport" type="xbrli:stringItemType" substitutionGroup="xbrli:item" xbrli:periodType="instant" nillable="true" />
+</schema>

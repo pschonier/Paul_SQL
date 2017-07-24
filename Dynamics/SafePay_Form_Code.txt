@@ -1,0 +1,16 @@
+Option Explicit
+
+Dim con As New ADODB.Connection
+Dim cmd As ADODB.Command
+
+Private Sub Window_AfterActivate()
+Set con = UserInfoGet.CreateADOConnection
+con.DefaultDatabase = UserInfoGet.IntercompanyID
+Set cmd = New ADODB.Command
+cmd.ActiveConnection = con
+cmd.CommandType = adCmdStoredProc
+cmd.CommandText = "exec SafePayDateUpdate"
+cmd.Execute
+con.Close
+End Sub
+

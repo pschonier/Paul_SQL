@@ -1,0 +1,67 @@
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [1/12/2011 - 9:25:42 AM] - Started database synchronization
+-- Template path: N:\FRXWIN\SysData\frxsys32.tpl
+-- Template version: 6.7.11027
+-- Source database path: N:\FRXWIN\SysData\frxsys32.mdb
+-- Source database version: 6.7.9111
+(DoSynchronization) Copied template to N:\FRXWIN\SysData\frxsys32.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table ActiveUsers...source table did not contain any records.
+-- Copying data from table Admin...COMPLETED
+-- Copying data from table AdminControl...source table did not contain any records.
+-- Copying data from table Company...COMPLETED
+-- Copying data from table CompanyException...source table did not contain any records.
+-- Copying data from table Control...Control record updated (not copied from source).
+-- Copying data from table Exception...source table did not contain any records.
+-- Copying data from table Fonts...COMPLETED
+-- Copying data from table GLIndexInfo...COMPLETED
+-- Copying data from table Groups...source table did not contain any records.
+-- Copying data from table Membership...source table did not contain any records.
+-- Copying data from table RegisteredSys...COMPLETED
+-- Copying data from table Spec_Set_Master...COMPLETED
+-- Copying data from table SpecSetControl...COMPLETED
+-- Copying data from table Style...COMPLETED
+-- Copying data from table Users...COMPLETED
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [N:\FRXWIN\SysData\frxsys32.tmp] to [N:\FRXWIN\SysData\frxsys32.mdb]
+(UpgradeGroupSecurity) Upgrading group security...no update necessary.
+(AddSpecSetNameToExceptions) Updating spec set security...no update necessary.
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [1/12/2011 - 9:26:04 AM] - Started database synchronization
+-- Template path: N:\FRXWIN\SysData\frxrpt32.tpl
+-- Template version: 6.7.11027
+-- Source database path: \\filesvr-tul\Data\FRXWIN\SysData\FRxRpts.f32
+-- Source database version: 6.7.9111
+(DoSynchronization) Copied template to \\filesvr-tul\Data\FRXWIN\SysData\FRxRpts.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table AcctSetMaster...COMPLETED
+-- Copying data from table AdditionalText...source table did not contain any records.
+-- Copying data from table Catalog...COMPLETED
+-- Copying data from table Column_Detail...COMPLETED
+-- Copying data from table Column_Headers...COMPLETED
+-- Copying data from table Column_Master...COMPLETED
+-- Copying data from table Column_Specs...COMPLETED
+-- Copying data from table Control...Control record updated (not copied from source).
+-- Copying data from table EffectiveDates...source table did not contain any records.
+-- Copying data from table EmailAddress...source table did not contain any records.
+-- Copying data from table PageHeaders...COMPLETED
+-- Copying data from table Row_Detail...COMPLETED
+-- Copying data from table Row_Link_Control...COMPLETED
+-- Copying data from table Row_Link_Detail...COMPLETED
+-- Copying data from table Row_Master...COMPLETED
+-- Copying data from table Spec_Set_Master...source table did not contain any records.
+-- Copying data from table Tree_Details...COMPLETED
+-- Copying data from table Tree_Link_Details...COMPLETED
+-- Copying data from table Tree_Master...COMPLETED
+-- Copying data from table Tree_Security...source table did not contain any records.
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [\\filesvr-tul\Data\FRXWIN\SysData\FRxRpts.tmp] to [\\filesvr-tul\Data\FRXWIN\SysData\FRxRpts.f32]
+(UpgradeCatalogOutputInfo) Updating catalog output settings ...COMPLETED
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.

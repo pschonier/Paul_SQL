@@ -1,0 +1,35 @@
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [10/12/2011 - 4:00:09 PM] - Started database synchronization
+-- Template path: N:\FRXWIN\SysData\frxrpt32.tpl
+-- Template version: 6.7.11027
+-- Source database path: N:\FRXWIN\SysData\FRxDemo.f32
+-- Source database version: 6.7.9111
+(DoSynchronization) Copied template to N:\FRXWIN\SysData\FRxDemo.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table AcctSetMaster...COMPLETED
+-- Copying data from table AdditionalText...source table did not contain any records.
+-- Copying data from table Catalog...COMPLETED
+-- Copying data from table Column_Detail...COMPLETED
+-- Copying data from table Column_Headers...COMPLETED
+-- Copying data from table Column_Master...COMPLETED
+-- Copying data from table Column_Specs...COMPLETED
+-- Copying data from table Control...Control record updated (not copied from source).
+-- Copying data from table EffectiveDates...COMPLETED
+-- Copying data from table EmailAddress...source table did not contain any records.
+-- Copying data from table PageHeaders...COMPLETED
+-- Copying data from table Row_Detail...COMPLETED
+-- Copying data from table Row_Link_Control...COMPLETED
+-- Copying data from table Row_Link_Detail...COMPLETED
+-- Copying data from table Row_Master...COMPLETED
+-- Copying data from table Spec_Set_Master...source table did not contain any records.
+-- Copying data from table Tree_Details...COMPLETED
+-- Copying data from table Tree_Link_Details...COMPLETED
+-- Copying data from table Tree_Master...COMPLETED
+-- Copying data from table Tree_Security...source table did not contain any records.
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [N:\FRXWIN\SysData\FRxDemo.tmp] to [N:\FRXWIN\SysData\FRxDemo.f32]
+(UpgradeCatalogOutputInfo) Updating catalog output settings ...COMPLETED
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.

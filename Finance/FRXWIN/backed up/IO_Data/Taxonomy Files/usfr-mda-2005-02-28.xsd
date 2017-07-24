@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.xbrl.org/us/fr/rpt/mda/2005-02-28" elementFormDefault="qualified" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:usfr-mda="http://www.xbrl.org/us/fr/rpt/mda/2005-02-28">
+  <annotation>
+    <appinfo>
+      <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="usfr-mda-2005-02-28-presentation.xml" xlink:title="Presentation Links, all" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="usfr-mda-2005-02-28-label.xml" xlink:title="Label Links, all" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef"/>
+      <link:linkbaseRef xlink:type="simple" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:href="usfr-mda-2005-02-28-reference.xml" xlink:title="Reference Links, all" xlink:role="http://www.xbrl.org/2003/role/referenceLinkbaseRef"/>
+    </appinfo>
+  </annotation>
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd"/>
+  <element name="AccountingChanges" id="usfr-mda_AccountingChanges" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="AcquisitionOwnStock" id="usfr-mda_AcquisitionOwnStock" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="AdditionalFactorsThatMayAffectFutureResults" id="usfr-mda_AdditionalFactorsThatMayAffectFutureResults" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="AllowanceLoanLosses" id="usfr-mda_AllowanceLoanLosses" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="AlternativeMeasuresPerformance" id="usfr-mda_AlternativeMeasuresPerformance" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="AnalysisConsolidatedStatementIncome" id="usfr-mda_AnalysisConsolidatedStatementIncome" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="AnticipatedCashFlow" id="usfr-mda_AnticipatedCashFlow" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="AssetQuality" id="usfr-mda_AssetQuality" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="BusinessCombinations" id="usfr-mda_BusinessCombinations" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ChangeAccountingEstimates" id="usfr-mda_ChangeAccountingEstimates" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ChangeDisagreementsWithAccountants" id="usfr-mda_ChangeDisagreementsWithAccountants" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ChangePensionPlansImpact" id="usfr-mda_ChangePensionPlansImpact" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ContingenciesManagementsDiscussionAnalysis" id="usfr-mda_ContingenciesManagementsDiscussionAnalysis" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="CostsExpenses" id="usfr-mda_CostsExpenses" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="DepositsOtherSourcesFunds" id="usfr-mda_DepositsOtherSourcesFunds" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="DerivativesActivities" id="usfr-mda_DerivativesActivities" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="DescriptionBusiness" id="usfr-mda_DescriptionBusiness" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="DiscontinuedOperationsManagementsDiscussionAnalysis" id="usfr-mda_DiscontinuedOperationsManagementsDiscussionAnalysis" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="Dividends" id="usfr-mda_Dividends" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="EffectsEquityInstrumentsBeingIssuedReceivedPartners" id="usfr-mda_EffectsEquityInstrumentsBeingIssuedReceivedPartners" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ExposureAsbestosTreatmentCosts" id="usfr-mda_ExposureAsbestosTreatmentCosts" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="FederalFinancialAssistance" id="usfr-mda_FederalFinancialAssistance" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="FeesIndependentAuditors" id="usfr-mda_FeesIndependentAuditors" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="FinancialCondition" id="usfr-mda_FinancialCondition" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="FinancialConditionLoans" id="usfr-mda_FinancialConditionLoans" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ForeignOperationsForeignCurrencyTransactions" id="usfr-mda_ForeignOperationsForeignCurrencyTransactions" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ForwardLookingStatements" id="usfr-mda_ForwardLookingStatements" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ImpactInflation" id="usfr-mda_ImpactInflation" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ImpairmentGoodwillDescription" id="usfr-mda_ImpairmentGoodwillDescription" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="InvestmentsManagementsDiscussionAnalysis" id="usfr-mda_InvestmentsManagementsDiscussionAnalysis" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="LiquidityCapitalResources" id="usfr-mda_LiquidityCapitalResources" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="LiquidityCapitalResourcesCashOutlaysIncomeTaxes" id="usfr-mda_LiquidityCapitalResourcesCashOutlaysIncomeTaxes" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="LiquidityCapitalResourcesChangeEarningsPerShare" id="usfr-mda_LiquidityCapitalResourcesChangeEarningsPerShare" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="LiquidityCapitalResourcesHighYieldHighlyLeveragedTransactions" id="usfr-mda_LiquidityCapitalResourcesHighYieldHighlyLeveragedTransactions" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="LiquidityCapitalResourcesLeveragedEmployeesStockOwnershipPlans" id="usfr-mda_LiquidityCapitalResourcesLeveragedEmployeesStockOwnershipPlans" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ManagementInformation" id="usfr-mda_ManagementInformation" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ManagementsDiscussionAnalysis" id="usfr-mda_ManagementsDiscussionAnalysis" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ManagementsDiscussionAnalysisRevenueRecognition" id="usfr-mda_ManagementsDiscussionAnalysisRevenueRecognition" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="MaterialChanges" id="usfr-mda_MaterialChanges" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="NonperformingAssets" id="usfr-mda_NonperformingAssets" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="OperationsGeneral" id="usfr-mda_OperationsGeneral" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="OperationsGeneralNetInterestIncome" id="usfr-mda_OperationsGeneralNetInterestIncome" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="OperationsGeneralNoninterestExpense" id="usfr-mda_OperationsGeneralNoninterestExpense" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="OperationsGeneralNoninterestIncome" id="usfr-mda_OperationsGeneralNoninterestIncome" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="OperationsIncomeTaxes" id="usfr-mda_OperationsIncomeTaxes" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="ProductDevelopments" id="usfr-mda_ProductDevelopments" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="QuantitativeQualitativeDisclosuresAboutMarketRisk" id="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRisk" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="QuantitativeQualitativeDisclosuresAboutMarketRiskQualitativeDisclosures" id="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQualitativeDisclosures" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="QuantitativeQualitativeDisclosuresAboutMarketRiskQuantitativeDisclosuresGeneral" id="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQuantitativeDisclosuresGeneral" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="QuantitativeQualitativeDisclosuresAboutMarketRiskSensitivityAnalysis" id="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskSensitivityAnalysis" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="QuantitativeQualitativeDisclosuresAboutMarketRiskTabularPresentation" id="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskTabularPresentation" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="QuantitativeQualitativeDisclosuresAboutMarketRiskValueRisk" id="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskValueRisk" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="RestructuringChargesManagementsDiscussionAnalysis" id="usfr-mda_RestructuringChargesManagementsDiscussionAnalysis" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="RestructuringChargesMaterialRestructuringCharges" id="usfr-mda_RestructuringChargesMaterialRestructuringCharges" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="RestructuringChargesNatureAmountsExitCosts" id="usfr-mda_RestructuringChargesNatureAmountsExitCosts" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="RestructuringChargesPriorPeriodRestructuringCharges" id="usfr-mda_RestructuringChargesPriorPeriodRestructuringCharges" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="Revenues" id="usfr-mda_Revenues" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="SegmentsBusinessForeignOperationsRisks" id="usfr-mda_SegmentsBusinessForeignOperationsRisks" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="SegmentsBusinessManagementsDiscussionAnalysis" id="usfr-mda_SegmentsBusinessManagementsDiscussionAnalysis" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="SegmentsBusinessPrincipleMarketsDistribution" id="usfr-mda_SegmentsBusinessPrincipleMarketsDistribution" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="SegmentsBusinessRevenueContributedByTypeProductService" id="usfr-mda_SegmentsBusinessRevenueContributedByTypeProductService" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="SelectedFinancialData" id="usfr-mda_SelectedFinancialData" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="SelectedFinancialDataMattersAffectingComparability" id="usfr-mda_SelectedFinancialDataMattersAffectingComparability" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="SelectedFinancialDataProFormaInformationAccountingChange" id="usfr-mda_SelectedFinancialDataProFormaInformationAccountingChange" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="SignificantAccountingPoliciesAssumptions" id="usfr-mda_SignificantAccountingPoliciesAssumptions" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+  <element name="TheEuroConversion" id="usfr-mda_TheEuroConversion" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration"/>
+</schema>

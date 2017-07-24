@@ -1,0 +1,44 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|                        FRx Install Assistant Log v6.7.9111                     |
+|                                                                                |
+|This file provides the details of the changes that were made by the FRx Install |
+|Assistant Program.  If errors occurred or the utility could not determine the   |
+|proper values to set in the new install, these items have been noted with an    |
+|[EXCEPTION] tag in the details below                                            |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+*** Upgrade Details ***
+-----------------------
+Destination FRx Version:   6.70
+Destination Data Location: N:\FRXWIN\SysData\
+Installation Path:         C:\Program Files (x86)\FRx Software\FRx 6.7\
+Execution Source:          Installation
+Execution Date & Time:     6/2/2015 10:43:49 AM
+
+SysData Type...SHARED
+
+
+*** Installation Cleanup and Validation***
+------------------------------------------
+Deleting temporary install files...
+frx0132.frx...DELETED
+frx0232.frx...DELETED
+
+PMM File...FOUND
+frxini32.tmp...DELETED
+prod32.tmp...DELETED
+
+Installation Cleanup and Validation ...COMPLETED
+
+
+----------------------------------------------------------------------------------
+
+Install Assist Procedure Completed Normally
+
+Exceptions Noted: 0
+Log File Location: N:\FRXWIN\SysData\LogFiles\InstallAssist06022015.log
+
+
+Upgrade Procedure...COMPLETED
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

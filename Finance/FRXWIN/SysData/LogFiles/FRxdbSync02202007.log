@@ -1,0 +1,102 @@
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [2/20/2007 - 11:02:49 AM] - Started database synchronization
+-- Template path: C:\Program Files\FRx Software\FRx 6.7\SysData\frxsys32.tpl
+-- Template version: 6.7.8069
+-- Source database path: C:\Program Files\FRx Software\FRx 6.7\SysData\frxsys32.mdb
+-- Source database version: 6.7.182
+(DoSynchronization) Copied template to C:\Program Files\FRx Software\FRx 6.7\SysData\frxsys32.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table ActiveUsers...source table did not contain any records.
+-- Copying data from table Admin...COMPLETED
+-- Copying data from table AdminControl...source table did not contain any records.
+-- Copying data from table Company...COMPLETED
+-- Copying data from table CompanyException...source table did not contain any records.
+-- Copying data from table Control...Control record updated (not copied from source).
+-- Copying data from table Exception...source table did not contain any records.
+-- Copying data from table Fonts...COMPLETED
+-- Copying data from table GLIndexInfo...table doesn't exist in source database.
+-- Copying data from table Groups...source table did not contain any records.
+-- Copying data from table Membership...source table did not contain any records.
+-- Copying data from table RegisteredSys...COMPLETED
+-- Copying data from table Spec_Set_Master...COMPLETED
+-- Copying data from table SpecSetControl...COMPLETED
+-- Copying data from table Style...COMPLETED
+-- Copying data from table Users...COMPLETED
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [C:\Program Files\FRx Software\FRx 6.7\SysData\frxsys32.tmp] to [C:\Program Files\FRx Software\FRx 6.7\SysData\frxsys32.mdb]
+(UpgradeGroupSecurity) Upgrading group security...no update necessary.
+(AddSpecSetNameToExceptions) Updating spec set security...no update necessary.
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [2/20/2007 - 11:02:50 AM] - Started database synchronization
+-- Template path: C:\Program Files\FRx Software\FRx 6.7\SysData\frxrpt32.tpl
+-- Template version: 6.7.8069
+-- Source database path: C:\Program Files\FRx Software\FRx 6.7\SysData\\frxrpts.f32
+-- Source database version: 6.7.182
+(DoSynchronization) Copied template to C:\Program Files\FRx Software\FRx 6.7\SysData\\frxrpts.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table AcctSetMaster...source table did not contain any records.
+-- Copying data from table AdditionalText...source table did not contain any records.
+-- Copying data from table Catalog...source table did not contain any records.
+-- Copying data from table Column_Detail...source table did not contain any records.
+-- Copying data from table Column_Headers...source table did not contain any records.
+-- Copying data from table Column_Master...source table did not contain any records.
+-- Copying data from table Column_Specs...COMPLETED
+-- Copying data from table Control...Control record updated (not copied from source).
+-- Copying data from table EffectiveDates...source table did not contain any records.
+-- Copying data from table EmailAddress...source table did not contain any records.
+-- Copying data from table PageHeaders...source table did not contain any records.
+-- Copying data from table Row_Detail...source table did not contain any records.
+-- Copying data from table Row_Link_Control...source table did not contain any records.
+-- Copying data from table Row_Link_Detail...source table did not contain any records.
+-- Copying data from table Row_Master...source table did not contain any records.
+-- Copying data from table Spec_Set_Master...source table did not contain any records.
+-- Copying data from table Tree_Details...source table did not contain any records.
+-- Copying data from table Tree_Link_Details...source table did not contain any records.
+-- Copying data from table Tree_Master...source table did not contain any records.
+-- Copying data from table Tree_Security...source table did not contain any records.
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [C:\Program Files\FRx Software\FRx 6.7\SysData\\frxrpts.tmp] to [C:\Program Files\FRx Software\FRx 6.7\SysData\\frxrpts.f32]
+(UpgradeCatalogOutputInfo) Updating catalog output settings ...COMPLETED
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [2/20/2007 - 11:02:50 AM] - Started database synchronization
+-- Template path: C:\Program Files\FRx Software\FRx 6.7\SysData\frxrpt32.tpl
+-- Template version: 6.7.8069
+-- Source database path: C:\Program Files\FRx Software\FRx 6.7\SysData\FRxDemo.f32
+-- Source database version: 6.7.182
+(DoSynchronization) Copied template to C:\Program Files\FRx Software\FRx 6.7\SysData\FRxDemo.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table AcctSetMaster...COMPLETED
+-- Copying data from table AdditionalText...source table did not contain any records.
+-- Copying data from table Catalog...COMPLETED
+-- Copying data from table Column_Detail...COMPLETED
+-- Copying data from table Column_Headers...COMPLETED
+-- Copying data from table Column_Master...COMPLETED
+-- Copying data from table Column_Specs...COMPLETED
+-- Copying data from table Control...Control record updated (not copied from source).
+-- Copying data from table EffectiveDates...COMPLETED
+-- Copying data from table EmailAddress...source table did not contain any records.
+-- Copying data from table PageHeaders...COMPLETED
+-- Copying data from table Row_Detail...COMPLETED
+-- Copying data from table Row_Link_Control...COMPLETED
+-- Copying data from table Row_Link_Detail...COMPLETED
+-- Copying data from table Row_Master...COMPLETED
+-- Copying data from table Spec_Set_Master...source table did not contain any records.
+-- Copying data from table Tree_Details...COMPLETED
+-- Copying data from table Tree_Link_Details...COMPLETED
+-- Copying data from table Tree_Master...COMPLETED
+-- Copying data from table Tree_Security...source table did not contain any records.
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [C:\Program Files\FRx Software\FRx 6.7\SysData\FRxDemo.tmp] to [C:\Program Files\FRx Software\FRx 6.7\SysData\FRxDemo.f32]
+(UpgradeCatalogOutputInfo) Updating catalog output settings ...COMPLETED
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.

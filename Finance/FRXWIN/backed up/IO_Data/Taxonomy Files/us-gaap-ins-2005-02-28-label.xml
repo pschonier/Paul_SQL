@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_ChangeOtherCurrentAssets" xlink:label="usfr-pte_ChangeOtherCurrentAssets" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_ChangeOtherCurrentAssets" xlink:to="usfr-pte_ChangeOtherCurrentAssets_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_ChangeOtherCurrentAssets_lbl_1" xml:lang="en">Increase/(Decrease) in Other Operating Assets</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_ChangeOtherCurrentAssets_lbl_1" xml:lang="en">Other Operating Assets</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_ChangeOtherCurrentLiabilities" xlink:label="usfr-pte_ChangeOtherCurrentLiabilities" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_ChangeOtherCurrentLiabilities" xlink:to="usfr-pte_ChangeOtherCurrentLiabilities_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_ChangeOtherCurrentLiabilities_lbl_1" xml:lang="en">Increase/(Decrease) in Other Operating Liabilities</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_ChangeOtherCurrentLiabilities_lbl_1" xml:lang="en">Other Operating Liabilities</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_OtherChangesNet" xlink:label="usfr-pte_OtherChangesNet" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_OtherChangesNet" xlink:to="usfr-pte_OtherChangesNet_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_OtherChangesNet_lbl_1" xml:lang="en">Other Increase/(Decrease) in Operating Assets and Liabilities , Net</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_OtherChangesNet_lbl_1" xml:lang="en">Other Operating Assets and Liabilities</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_OtherPrepaidExpenses" xlink:label="usfr-pte_OtherPrepaidExpenses" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_OtherPrepaidExpenses" xlink:to="usfr-pte_OtherPrepaidExpenses_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_OtherPrepaidExpenses_lbl_1" xml:lang="en">Prepaid Assets - Other</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_OtherPrepaidExpenses_lbl_1" xml:lang="en">Other Prepaid Expenses</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_PrepaidExpenses" xlink:label="usfr-pte_PrepaidExpenses" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_PrepaidExpenses" xlink:to="usfr-pte_PrepaidExpenses_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_PrepaidExpenses_lbl_1" xml:lang="en">Prepaid Assets</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_PrepaidExpenses_lbl_1" xml:lang="en">Prepaid Assets</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/totalLabel" xlink:label="usfr-pte_PrepaidExpenses_lbl_1" xml:lang="en">Prepaid Assets - Total</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_ShortTermInvestments" xlink:label="usfr-pte_ShortTermInvestments" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_ShortTermInvestments" xlink:to="usfr-pte_ShortTermInvestments_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_ShortTermInvestments_lbl_1" xml:lang="en">Short-Term Investments - Cost</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_ShortTermInvestments_lbl_1" xml:lang="en">Short-Term Investments - Cost</label>
+  </labelLink>
+</linkbase>

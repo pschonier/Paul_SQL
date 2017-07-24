@@ -1,0 +1,2 @@
+Reports ---> Purchasing ----> Purchasing Posting Journals --> Checks Journal under "Reports" --> "New" --> Give it a name --> Sort by: Audit trail code-->
+Ranges: Posted date --> From today to Today (Press tab after from date filled) --> Change Destination to "Screen"

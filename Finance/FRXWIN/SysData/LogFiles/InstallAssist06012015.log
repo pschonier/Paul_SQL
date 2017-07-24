@@ -1,0 +1,34 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+|                        FRx Install Assistant Log v6.7.9111                     |
+|                                                                                |
+|This file provides the details of the changes that were made by the FRx Install |
+|Assistant Program.  If errors occurred or the utility could not determine the   |
+|proper values to set in the new install, these items have been noted with an    |
+|[EXCEPTION] tag in the details below                                            |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+*** Upgrade Details ***
+-----------------------
+Destination FRx Version:   6.70
+Destination Data Location: N:\FRXWIN\SysData\
+Installation Path:         C:\Program Files (x86)\FRx Software\FRx 6.7\
+Execution Source:          Installation
+Execution Date & Time:     6/1/2015 11:53:08 AM
+
+SysData Type...SHARED
+
+
+----------------------------------------------------------------------------------
+
+Install Assist Error.  Please contact Technical Support BEFORE attempting to 
+launch FRx.  Failure to do this may cause the loss of your existing setup and
+SpecSet information.
+
+Log File Location: N:\FRXWIN\SysData\LogFiles\InstallAssist06012015.log
+
+
+Upgrade Procedure...TERMINATED
+
+Log File Viewed
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

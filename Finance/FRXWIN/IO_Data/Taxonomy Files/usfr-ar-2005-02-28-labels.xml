@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_AccountantAddress" xlink:label="usfr-ar_AccountantAddress" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_AccountantAddress" xlink:to="usfr-ar_AccountantAddress_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_AccountantAddress_lbl" xml:lang="en">Section which contains the independent accountant/accounting firm's address information.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_AccountantAddress_lbl" xml:lang="en" xlink:title="int-ar_AccountantsInformationAddress">Accountant Address</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_AccountantName" xlink:label="usfr-ar_AccountantName" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_AccountantName" xlink:to="usfr-ar_AccountantName_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_AccountantName_lbl" xml:lang="en">Name of the independent accountant/accounting firm who issued the Accountants Report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_AccountantName_lbl" xml:lang="en" xlink:title="int-ar_AccountantsInformationName">Accountant Name</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_AccountantSignature" xlink:label="usfr-ar_AccountantSignature" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_AccountantSignature" xlink:to="usfr-ar_AccountantSignature_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_AccountantSignature_lbl" xml:lang="en">Signature of the independent accountant/accounting firm.  Currently, this tag would primarily use the /s/ identifier to denote signature and then include the independent accountant's/accounting firm's name.  In the future this might contain either a GIF image of a signature/digital signature or a URL to specific signature information.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_AccountantSignature_lbl" xml:lang="en" xlink:title="int-ar_AccountantsInformationSignature">Accountant Signature</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_AccountantsInformation" xlink:label="usfr-ar_AccountantsInformation" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_AccountantsInformation" xlink:to="usfr-ar_AccountantsInformation_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_AccountantsInformation_lbl" xml:lang="en">Information which describes the independent accountant/accounting firm who prepared the Accountants Report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_AccountantsInformation_lbl" xml:lang="en" xlink:title="int-ar_AccountantsInformation">Accountants Information</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_AccountantsReport" xlink:label="usfr-ar_AccountantsReport" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_AccountantsReport" xlink:to="usfr-ar_AccountantsReport_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_AccountantsReport_lbl" xml:lang="en">Report(s) issued by independent accountant or internal accountant.  If two reports are issued, two accountant report sections should appear</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_AccountantsReport_lbl" xml:lang="en" xlink:title="int-ar_AccountantsReport">Accountants Report</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_AccountantsReportTuple" xlink:label="usfr-ar_AccountantsReportTuple" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_AccountantsReportTuple" xlink:to="usfr-ar_AccountantsReportTuple_lbl" />
+    <label id="label_AccountantsReportTuple_1109033973331_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_AccountantsReportTuple_lbl" xml:lang="en" xlink:title="label_AccountantsReportTuple">The accountants report is contained within a tuple to permit the inclusion of multiple accountants reports from different accounting firms.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_AccountantsReportTuple_lbl" xml:lang="en">Accountants Report</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_AccountingStandardsApplied" xlink:label="usfr-ar_AccountingStandardsApplied" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_AccountingStandardsApplied" xlink:to="usfr-ar_AccountingStandardsApplied_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_AccountingStandardsApplied_lbl" xml:lang="en">Accounting standards applied in preparing the financial statements covered by the Accountants Report:  US GAAP, Canadian GAAP, etc.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_AccountingStandardsApplied_lbl" xml:lang="en" xlink:title="int-ar_AccountingStandardsApplied">Accounting Standards Applied</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_Addressee" xlink:label="usfr-ar_Addressee" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_Addressee" xlink:to="usfr-ar_Addressee_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_Addressee_lbl" xml:lang="en">Addressee of the Accountants Report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_Addressee_lbl" xml:lang="en" xlink:title="int-ar_Addressee">Addressee</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_BalanceSheetDate" xlink:label="usfr-ar_BalanceSheetDate" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_BalanceSheetDate" xlink:to="usfr-ar_BalanceSheetDate_lbl" />
+    <label id="label_BalanceSheetDate_1109034046472_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_BalanceSheetDate_lbl" xml:lang="en" xlink:title="label_BalanceSheetDate">The date of the Statement of Financial Position to which the accountants report applies.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_BalanceSheetDate_lbl" xml:lang="en" xlink:title="int-ar_BalanceSheetDate">Balance Sheet Date</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_CashFlowsStatementPeriod" xlink:label="usfr-ar_CashFlowsStatementPeriod" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_CashFlowsStatementPeriod" xlink:to="usfr-ar_CashFlowsStatementPeriod_lbl" />
+    <label id="label_CashFlowsStatementPeriod_1109034086150_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_CashFlowsStatementPeriod_lbl" xml:lang="en" xlink:title="label_CashFlowsStatementPeriod">The period covered by the Statement of Cash Flows  to which the accountants report applies.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_CashFlowsStatementPeriod_lbl" xml:lang="en" xlink:title="int-ar_CashFlowsStatementPeriod">Cash Flows Statement Period</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_City" xlink:label="usfr-ar_City" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_City" xlink:to="usfr-ar_City_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_City_lbl" xml:lang="en">City of the independent accountant/accounting firm issuing the report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_City_lbl" xml:lang="en" xlink:title="int-ar_City">City</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_Country" xlink:label="usfr-ar_Country" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_Country" xlink:to="usfr-ar_Country_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_Country_lbl" xml:lang="en">Country or region of the independent accountant/accounting firm issuing the report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_Country_lbl" xml:lang="en" xlink:title="int-ar_Country">Country</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_DateDualDate" xlink:label="usfr-ar_DateDualDate" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_DateDualDate" xlink:to="usfr-ar_DateDualDate_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_DateDualDate_lbl" xml:lang="en">Date of the dual date.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_DateDualDate_lbl" xml:lang="en" xlink:title="int-ar_DateDualDate">Date of Dual Date</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_DualDate" xlink:label="usfr-ar_DualDate" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_DualDate" xlink:to="usfr-ar_DualDate_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_DualDate_lbl" xml:lang="en">Section which contains information relating to a dual date which was issued, if any.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_DualDate_lbl" xml:lang="en" xlink:title="int-ar_DualDate">Dual Date</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_DualDateNote" xlink:label="usfr-ar_DualDateNote" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_DualDateNote" xlink:to="usfr-ar_DualDateNote_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_DualDateNote_lbl" xml:lang="en">Explanatory text of dual date.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_DualDateNote_lbl" xml:lang="en" xlink:title="int-ar_DualDateNote">Dual Date Note</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_ExplanatoryParagraph" xlink:label="usfr-ar_ExplanatoryParagraph" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_ExplanatoryParagraph" xlink:to="usfr-ar_ExplanatoryParagraph_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_ExplanatoryParagraph_lbl" xml:lang="en">Explanatory paragraph issued by the independent accountant/accounting firm.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_ExplanatoryParagraph_lbl" xml:lang="en" xlink:title="int-ar_ExplanatoryParagraph">Explanatory Paragraph</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_IncomeStatementPeriod" xlink:label="usfr-ar_IncomeStatementPeriod" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_IncomeStatementPeriod" xlink:to="usfr-ar_IncomeStatementPeriod_lbl" />
+    <label id="label_IncomeStatementPeriod_1109034108994_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_IncomeStatementPeriod_lbl" xml:lang="en" xlink:title="label_IncomeStatementPeriod">The period covered by the Statement of Income to which the accountants report applies.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_IncomeStatementPeriod_lbl" xml:lang="en" xlink:title="int-ar_IncomeStatementPeriod">Income Statement Period</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_IntroductoryParagraph" xlink:label="usfr-ar_IntroductoryParagraph" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_IntroductoryParagraph" xlink:to="usfr-ar_IntroductoryParagraph_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_IntroductoryParagraph_lbl" xml:lang="en">Introductory paragraph issued by the independent accountant/accounting firm.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_IntroductoryParagraph_lbl" xml:lang="en" xlink:title="int-ar_IntroductoryParagraph">Introductory Paragraph</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_OpinionParagraph" xlink:label="usfr-ar_OpinionParagraph" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_OpinionParagraph" xlink:to="usfr-ar_OpinionParagraph_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_OpinionParagraph_lbl" xml:lang="en">Opinion paragraph issued by the independent accountant/accounting firm.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_OpinionParagraph_lbl" xml:lang="en" xlink:title="int-ar_OpinionParagraph">Opinion Paragraph</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_ReportBody" xlink:label="usfr-ar_ReportBody" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_ReportBody" xlink:to="usfr-ar_ReportBody_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_ReportBody_lbl" xml:lang="en">Section which contains the paragraphs which make up the body of the Accountants Report.  This tag is to be used when the entire Accountants Report is to be listed together (i.e. not broken out by paragraph).</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_ReportBody_lbl" xml:lang="en" xlink:title="int-ar_ReportBody">Report Body</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_ReportDate" xlink:label="usfr-ar_ReportDate" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_ReportDate" xlink:to="usfr-ar_ReportDate_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_ReportDate_lbl" xml:lang="en">Report issue date of the Accountants Report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_ReportDate_lbl" xml:lang="en" xlink:title="int-ar_ReportDate">Report Date</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_ReportInformation" xlink:label="usfr-ar_ReportInformation" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_ReportInformation" xlink:to="usfr-ar_ReportInformation_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_ReportInformation_lbl" xml:lang="en">Information contained in and which describes the specific Accountants Report issued.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_ReportInformation_lbl" xml:lang="en" xlink:title="int-ar_ReportInformation">Report Information</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_ReportingMethod" xlink:label="usfr-ar_ReportingMethod" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_ReportingMethod" xlink:to="usfr-ar_ReportingMethod_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_ReportingMethod_lbl" xml:lang="en">Reporting method used to prepare financial statements covered by the Accountants Report:  GAAP, Cash, Modified Cash, Tax or OCBOA</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_ReportingMethod_lbl" xml:lang="en" xlink:title="int-ar_ReportingMethod">Reporting Method</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_ReportType" xlink:label="usfr-ar_ReportType" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_ReportType" xlink:to="usfr-ar_ReportType_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_ReportType_lbl" xml:lang="en">Type of independent Accountants Report issued.  Examples are audit, review, or compilation.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_ReportType_lbl" xml:lang="en" xlink:title="int-ar_ReportType">Report Type</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_ScopeParagraph" xlink:label="usfr-ar_ScopeParagraph" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_ScopeParagraph" xlink:to="usfr-ar_ScopeParagraph_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_ScopeParagraph_lbl" xml:lang="en">Scope paragraph issued by the independent accountant/accounting firm.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_ScopeParagraph_lbl" xml:lang="en" xlink:title="int-ar_ScopeParagraph">Scope Paragraph</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_StatementComprehensiveIncomePeriod" xlink:label="usfr-ar_StatementComprehensiveIncomePeriod" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_StatementComprehensiveIncomePeriod" xlink:to="usfr-ar_StatementComprehensiveIncomePeriod_lbl" />
+    <label id="label_StatementComprehensiveIncomePeriod_1109034150230_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_StatementComprehensiveIncomePeriod_lbl" xml:lang="en" xlink:title="label_StatementComprehensiveIncomePeriod">The period covered by the Statement of Comprehensive Income  to which the accountants report applies.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_StatementComprehensiveIncomePeriod_lbl" xml:lang="en" xlink:title="int-ar_StatementComprehensiveIncomePeriod">Statement of Comprehensive Income Period</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_StatementsCovered" xlink:label="usfr-ar_StatementsCovered" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_StatementsCovered" xlink:to="usfr-ar_StatementsCovered_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_StatementsCovered_lbl" xml:lang="en">Section which describes the statements covered by the Accountants Report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_StatementsCovered_lbl" xml:lang="en" xlink:title="int-ar_StatementsCovered">Statements Covered</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_StatementStockholdersEquityPeriod" xlink:label="usfr-ar_StatementStockholdersEquityPeriod" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_StatementStockholdersEquityPeriod" xlink:to="usfr-ar_StatementStockholdersEquityPeriod_lbl" />
+    <label id="label_StatementStockholdersEquityPeriod_1109034187480_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_StatementStockholdersEquityPeriod_lbl" xml:lang="en" xlink:title="label_StatementStockholdersEquityPeriod">The period covered by the Statement of Stockholders' Equity  to which the accountants report applies.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_StatementStockholdersEquityPeriod_lbl" xml:lang="en" xlink:title="int-ar_StatementStockholdersEquityPeriod">Statement of Stockholder's Equity Period</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_StateProvince" xlink:label="usfr-ar_StateProvince" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_StateProvince" xlink:to="usfr-ar_StateProvince_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_StateProvince_lbl" xml:lang="en">State or province of the independent accountant/accounting firm issuing the report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_StateProvince_lbl" xml:lang="en" xlink:title="int-ar_StateProvince">State or Province</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_Street1" xlink:label="usfr-ar_Street1" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_Street1" xlink:to="usfr-ar_Street1_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_Street1_lbl" xml:lang="en">Street address line 1 of the independent accountant/accounting firm issuing the report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_Street1_lbl" xml:lang="en" xlink:title="int-ar_Street1">Street 1</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_Street2" xlink:label="usfr-ar_Street2" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_Street2" xlink:to="usfr-ar_Street2_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_Street2_lbl" xml:lang="en">Street address line 2 of the independent accountant/accounting firm issuing the report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_Street2_lbl" xml:lang="en" xlink:title="int-ar_Street2">Street 2</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_TitleReport" xlink:label="usfr-ar_TitleReport" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_TitleReport" xlink:to="usfr-ar_TitleReport_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_TitleReport_lbl" xml:lang="en">Title which appears on the Accountants Report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_TitleReport_lbl" xml:lang="en" xlink:title="int-ar_TitleReport">Title of Accountants Report</label>
+    <loc xlink:type="locator" xlink:href="usfr-ar-2005-02-28.xsd#usfr-ar_ZIPPostalCode" xlink:label="usfr-ar_ZIPPostalCode" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-ar_ZIPPostalCode" xlink:to="usfr-ar_ZIPPostalCode_lbl" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/documentation" xlink:label="usfr-ar_ZIPPostalCode_lbl" xml:lang="en">ZIP or other postal code of the independent accountant/accounting firm issuing the report.</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-ar_ZIPPostalCode_lbl" xml:lang="en" xlink:title="int-ar_ZIPPostalCode">Zip or Postal Code</label>
+  </labelLink>
+</linkbase>

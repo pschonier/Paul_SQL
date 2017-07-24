@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <roleRef roleURI="http://www.xbrl.org/us/fr/lr/role/TupleContentModelsFinancialServices" xlink:type="simple" xlink:href="usfr-fste-2005-02-28.xsd#TupleContentModelsFinancialServices"/>
+  <presentationLink xlink:type="extended" xlink:role="http://www.xbrl.org/us/fr/lr/role/TupleContentModelsFinancialServices">
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_PremiumsReceivableDiscountPremiumPremiumsReceivable" xlink:label="usfr-fste_PremiumsReceivableDiscountPremiumPremiumsReceivable"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_DescriptionPremiumReceivable" xlink:label="usfr-fste_DescriptionPremiumReceivable"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_PremiumsReceivableDiscountPremiumPremiumsReceivable" xlink:to="usfr-fste_DescriptionPremiumReceivable" use="optional" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_DiscountPremiumPremiumsReceivableFaceAmountReceivables" xlink:label="usfr-fste_DiscountPremiumPremiumsReceivableFaceAmountReceivables"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_PremiumsReceivableDiscountPremiumPremiumsReceivable" xlink:to="usfr-fste_DiscountPremiumPremiumsReceivableFaceAmountReceivables" use="optional" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_DiscountPremiumPremiumsReceivableEffectiveInterestRateReceivables" xlink:label="usfr-fste_DiscountPremiumPremiumsReceivableEffectiveInterestRateReceivables"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_PremiumsReceivableDiscountPremiumPremiumsReceivable" xlink:to="usfr-fste_DiscountPremiumPremiumsReceivableEffectiveInterestRateReceivables" use="optional" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_RegulatoryDisclosuresRegulatoryCapitalRatioSummary" xlink:label="usfr-fste_RegulatoryDisclosuresRegulatoryCapitalRatioSummary"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_AmountRatioTypeDescription" xlink:label="usfr-fste_AmountRatioTypeDescription"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_RegulatoryDisclosuresRegulatoryCapitalRatioSummary" xlink:to="usfr-fste_AmountRatioTypeDescription" use="optional" order="1.0"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_TotalCapital" xlink:label="usfr-fste_TotalCapital"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_RegulatoryDisclosuresRegulatoryCapitalRatioSummary" xlink:to="usfr-fste_TotalCapital" use="optional" order="2.0"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_Tier1Capital" xlink:label="usfr-fste_Tier1Capital"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_RegulatoryDisclosuresRegulatoryCapitalRatioSummary" xlink:to="usfr-fste_Tier1Capital" use="optional" order="3.0"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_TotalCapitalRiskWeightedAssetsRatio" xlink:label="usfr-fste_TotalCapitalRiskWeightedAssetsRatio"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_RegulatoryDisclosuresRegulatoryCapitalRatioSummary" xlink:to="usfr-fste_TotalCapitalRiskWeightedAssetsRatio" use="optional" order="4.0"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_Tier1CapitalRiskWeightedAssetsRatio" xlink:label="usfr-fste_Tier1CapitalRiskWeightedAssetsRatio"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_RegulatoryDisclosuresRegulatoryCapitalRatioSummary" xlink:to="usfr-fste_Tier1CapitalRiskWeightedAssetsRatio" use="optional" order="5.0"/>
+    <loc xlink:type="locator" xlink:href="usfr-fste-2005-02-28.xsd#usfr-fste_Tier1CapitalAverageAssetsRatioActual" xlink:label="usfr-fste_Tier1CapitalAverageAssetsRatioActual"/>
+    <presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="usfr-fste_RegulatoryDisclosuresRegulatoryCapitalRatioSummary" xlink:to="usfr-fste_Tier1CapitalAverageAssetsRatioActual" use="optional" order="6.0"/>
+  </presentationLink>
+</linkbase>

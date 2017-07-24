@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_AccountingChanges" xlink:label="usfr-mda_AccountingChanges"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AccountingChanges_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Accounting Changes Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_AccountingChanges" xlink:to="usfr-mda_AccountingChanges_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AccountingChanges_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Accounting Changes</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_AcquisitionOwnStock" xlink:label="usfr-mda_AcquisitionOwnStock"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AcquisitionOwnStock_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Acquisition of Own Stock Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_AcquisitionOwnStock" xlink:to="usfr-mda_AcquisitionOwnStock_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AcquisitionOwnStock_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Acquisition of Own Stock</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_AdditionalFactorsThatMayAffectFutureResults" xlink:label="usfr-mda_AdditionalFactorsThatMayAffectFutureResults"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AdditionalFactorsThatMayAffectFutureResults_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Additional Factors that May Affect Future Results Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_AdditionalFactorsThatMayAffectFutureResults" xlink:to="usfr-mda_AdditionalFactorsThatMayAffectFutureResults_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AdditionalFactorsThatMayAffectFutureResults_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Additional Factors that May Affect Future Results</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_AllowanceLoanLosses" xlink:label="usfr-mda_AllowanceLoanLosses"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AllowanceLoanLosses_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Allowance for Loan Losses Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_AllowanceLoanLosses" xlink:to="usfr-mda_AllowanceLoanLosses_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AllowanceLoanLosses_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Allowance for Loan Losses</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_AlternativeMeasuresPerformance" xlink:label="usfr-mda_AlternativeMeasuresPerformance"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AlternativeMeasuresPerformance_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Alternative Measures of Performance Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_AlternativeMeasuresPerformance" xlink:to="usfr-mda_AlternativeMeasuresPerformance_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AlternativeMeasuresPerformance_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Alternative Measures of Performance</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_AnalysisConsolidatedStatementIncome" xlink:label="usfr-mda_AnalysisConsolidatedStatementIncome"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AnalysisConsolidatedStatementIncome_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Analysis of Consolidated Statement of Income Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_AnalysisConsolidatedStatementIncome" xlink:to="usfr-mda_AnalysisConsolidatedStatementIncome_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AnalysisConsolidatedStatementIncome_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Analysis of Consolidated Statement of Income</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_AnticipatedCashFlow" xlink:label="usfr-mda_AnticipatedCashFlow"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AnticipatedCashFlow_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Anticipated Cash Flow Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_AnticipatedCashFlow" xlink:to="usfr-mda_AnticipatedCashFlow_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AnticipatedCashFlow_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Anticipated Cash Flow</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_AssetQuality" xlink:label="usfr-mda_AssetQuality"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AssetQuality_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Asset Quality Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_AssetQuality" xlink:to="usfr-mda_AssetQuality_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_AssetQuality_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Asset Quality</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_BusinessCombinations" xlink:label="usfr-mda_BusinessCombinations"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_BusinessCombinations_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Business Combinations Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_BusinessCombinations" xlink:to="usfr-mda_BusinessCombinations_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_BusinessCombinations_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Business Combinations</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ChangeAccountingEstimates" xlink:label="usfr-mda_ChangeAccountingEstimates"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ChangeAccountingEstimates_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Changes in Accounting Estimates Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ChangeAccountingEstimates" xlink:to="usfr-mda_ChangeAccountingEstimates_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ChangeAccountingEstimates_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Change in Accounting Estimates</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ChangeDisagreementsWithAccountants" xlink:label="usfr-mda_ChangeDisagreementsWithAccountants"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ChangeDisagreementsWithAccountants_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Changes in and Disagreements with Accountants Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ChangeDisagreementsWithAccountants" xlink:to="usfr-mda_ChangeDisagreementsWithAccountants_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ChangeDisagreementsWithAccountants_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Disagreements with Accountants</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ChangePensionPlansImpact" xlink:label="usfr-mda_ChangePensionPlansImpact"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ChangePensionPlansImpact_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Changes to Pension Plans and Impact Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ChangePensionPlansImpact" xlink:to="usfr-mda_ChangePensionPlansImpact_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ChangePensionPlansImpact_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Pension Plans and Impact</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ContingenciesManagementsDiscussionAnalysis" xlink:label="usfr-mda_ContingenciesManagementsDiscussionAnalysis"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ContingenciesManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Contingencies Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ContingenciesManagementsDiscussionAnalysis" xlink:to="usfr-mda_ContingenciesManagementsDiscussionAnalysis_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ContingenciesManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Contingencies</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_CostsExpenses" xlink:label="usfr-mda_CostsExpenses"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_CostsExpenses_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Costs and Expenses Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_CostsExpenses" xlink:to="usfr-mda_CostsExpenses_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_CostsExpenses_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Costs and Expenses</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_DepositsOtherSourcesFunds" xlink:label="usfr-mda_DepositsOtherSourcesFunds"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_DepositsOtherSourcesFunds_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Deposits and Other Sources of Funds Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_DepositsOtherSourcesFunds" xlink:to="usfr-mda_DepositsOtherSourcesFunds_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_DepositsOtherSourcesFunds_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Deposits and Other Sources of Funds</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_DerivativesActivities" xlink:label="usfr-mda_DerivativesActivities"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_DerivativesActivities_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Derivatives Activities Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_DerivativesActivities" xlink:to="usfr-mda_DerivativesActivities_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_DerivativesActivities_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Derivatives Activities</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_DescriptionBusiness" xlink:label="usfr-mda_DescriptionBusiness"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_DescriptionBusiness_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Description of Business</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_DescriptionBusiness" xlink:to="usfr-mda_DescriptionBusiness_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_DescriptionBusiness_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Description of Business</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_DiscontinuedOperationsManagementsDiscussionAnalysis" xlink:label="usfr-mda_DiscontinuedOperationsManagementsDiscussionAnalysis"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_DiscontinuedOperationsManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Discontinued Operations Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_DiscontinuedOperationsManagementsDiscussionAnalysis" xlink:to="usfr-mda_DiscontinuedOperationsManagementsDiscussionAnalysis_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_DiscontinuedOperationsManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Discontinued Operations</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_Dividends" xlink:label="usfr-mda_Dividends"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_Dividends_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Dividends Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_Dividends" xlink:to="usfr-mda_Dividends_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_Dividends_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Dividends</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_EffectsEquityInstrumentsBeingIssuedReceivedPartners" xlink:label="usfr-mda_EffectsEquityInstrumentsBeingIssuedReceivedPartners"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_EffectsEquityInstrumentsBeingIssuedReceivedPartners_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Effects of Equity Instruments Being Issued or Received from Partners Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_EffectsEquityInstrumentsBeingIssuedReceivedPartners" xlink:to="usfr-mda_EffectsEquityInstrumentsBeingIssuedReceivedPartners_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_EffectsEquityInstrumentsBeingIssuedReceivedPartners_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Effects of Equity Instruments Being Issued or Received from Partners</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ExposureAsbestosTreatmentCosts" xlink:label="usfr-mda_ExposureAsbestosTreatmentCosts"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ExposureAsbestosTreatmentCosts_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Exposure for Asbestos Treatment Costs Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ExposureAsbestosTreatmentCosts" xlink:to="usfr-mda_ExposureAsbestosTreatmentCosts_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ExposureAsbestosTreatmentCosts_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Exposure for Asbestos Treatment Costs</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_FederalFinancialAssistance" xlink:label="usfr-mda_FederalFinancialAssistance"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_FederalFinancialAssistance_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Federal Financial Assistance Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_FederalFinancialAssistance" xlink:to="usfr-mda_FederalFinancialAssistance_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_FederalFinancialAssistance_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Federal Financial Assistance</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_FeesIndependentAuditors" xlink:label="usfr-mda_FeesIndependentAuditors"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_FeesIndependentAuditors_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Fees of Independent Auditors Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_FeesIndependentAuditors" xlink:to="usfr-mda_FeesIndependentAuditors_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_FeesIndependentAuditors_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Fees of Independent Auditors</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_FinancialCondition" xlink:label="usfr-mda_FinancialCondition"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_FinancialCondition_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Financial Condition Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_FinancialCondition" xlink:to="usfr-mda_FinancialCondition_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_FinancialCondition_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Financial Condition</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_FinancialConditionLoans" xlink:label="usfr-mda_FinancialConditionLoans"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_FinancialConditionLoans_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Loans Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_FinancialConditionLoans" xlink:to="usfr-mda_FinancialConditionLoans_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_FinancialConditionLoans_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Loans</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ForeignOperationsForeignCurrencyTransactions" xlink:label="usfr-mda_ForeignOperationsForeignCurrencyTransactions"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ForeignOperationsForeignCurrencyTransactions_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Foreign Operations and Foreign Currency Transactions Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ForeignOperationsForeignCurrencyTransactions" xlink:to="usfr-mda_ForeignOperationsForeignCurrencyTransactions_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ForeignOperationsForeignCurrencyTransactions_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Foreign Operations and Foreign Currency Transactions</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ForwardLookingStatements" xlink:label="usfr-mda_ForwardLookingStatements"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ForwardLookingStatements_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Forward Looking Statements Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ForwardLookingStatements" xlink:to="usfr-mda_ForwardLookingStatements_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ForwardLookingStatements_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Forward Looking Statements</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ImpactInflation" xlink:label="usfr-mda_ImpactInflation"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ImpactInflation_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Impact of Inflation Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ImpactInflation" xlink:to="usfr-mda_ImpactInflation_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ImpactInflation_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Impact of Inflation</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ImpairmentGoodwillDescription" xlink:label="usfr-mda_ImpairmentGoodwillDescription"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ImpairmentGoodwillDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Impairment and Goodwill Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ImpairmentGoodwillDescription" xlink:to="usfr-mda_ImpairmentGoodwillDescription_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ImpairmentGoodwillDescription_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Impairment and Goodwill Discussion</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_InvestmentsManagementsDiscussionAnalysis" xlink:label="usfr-mda_InvestmentsManagementsDiscussionAnalysis"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_InvestmentsManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Investments Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_InvestmentsManagementsDiscussionAnalysis" xlink:to="usfr-mda_InvestmentsManagementsDiscussionAnalysis_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_InvestmentsManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Investments</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_LiquidityCapitalResourcesCashOutlaysIncomeTaxes" xlink:label="usfr-mda_LiquidityCapitalResourcesCashOutlaysIncomeTaxes"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResourcesCashOutlaysIncomeTaxes_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Liquidity Capital Resources - Cash Outlays for Income Taxes</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_LiquidityCapitalResourcesCashOutlaysIncomeTaxes" xlink:to="usfr-mda_LiquidityCapitalResourcesCashOutlaysIncomeTaxes_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResourcesCashOutlaysIncomeTaxes_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Cash Outlays for Income Taxes</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_LiquidityCapitalResourcesChangeEarningsPerShare" xlink:label="usfr-mda_LiquidityCapitalResourcesChangeEarningsPerShare"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResourcesChangeEarningsPerShare_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Liquidity Capital Resources - Changes in Earnings Per Share</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_LiquidityCapitalResourcesChangeEarningsPerShare" xlink:to="usfr-mda_LiquidityCapitalResourcesChangeEarningsPerShare_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResourcesChangeEarningsPerShare_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Change in Earnings Per Share</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_LiquidityCapitalResources" xlink:label="usfr-mda_LiquidityCapitalResources"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResources_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Liquidity Capital Resources Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_LiquidityCapitalResources" xlink:to="usfr-mda_LiquidityCapitalResources_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResources_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Liquidity Capital Resources</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_LiquidityCapitalResourcesHighYieldHighlyLeveragedTransactions" xlink:label="usfr-mda_LiquidityCapitalResourcesHighYieldHighlyLeveragedTransactions"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResourcesHighYieldHighlyLeveragedTransactions_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Liquidity Capital Resources - High Yield/Highly Leveraged Transactions</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_LiquidityCapitalResourcesHighYieldHighlyLeveragedTransactions" xlink:to="usfr-mda_LiquidityCapitalResourcesHighYieldHighlyLeveragedTransactions_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResourcesHighYieldHighlyLeveragedTransactions_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">High Yield/Highly Leveraged Transactions</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_LiquidityCapitalResourcesLeveragedEmployeesStockOwnershipPlans" xlink:label="usfr-mda_LiquidityCapitalResourcesLeveragedEmployeesStockOwnershipPlans"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResourcesLeveragedEmployeesStockOwnershipPlans_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Liquidity Capital Resources - Leveraged Employees Stock Ownership Plans</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_LiquidityCapitalResourcesLeveragedEmployeesStockOwnershipPlans" xlink:to="usfr-mda_LiquidityCapitalResourcesLeveragedEmployeesStockOwnershipPlans_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_LiquidityCapitalResourcesLeveragedEmployeesStockOwnershipPlans_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Leveraged Employee Stock Ownership Plans</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ManagementInformation" xlink:label="usfr-mda_ManagementInformation"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ManagementInformation_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Management Information Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ManagementInformation" xlink:to="usfr-mda_ManagementInformation_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ManagementInformation_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Management Information</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ManagementsDiscussionAnalysis" xlink:label="usfr-mda_ManagementsDiscussionAnalysis"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Management's Discussion and Analysis</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ManagementsDiscussionAnalysis" xlink:to="usfr-mda_ManagementsDiscussionAnalysis_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Management's Discussion and Analysis</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ManagementsDiscussionAnalysisRevenueRecognition" xlink:label="usfr-mda_ManagementsDiscussionAnalysisRevenueRecognition"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ManagementsDiscussionAnalysisRevenueRecognition_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Revenue Recognition Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ManagementsDiscussionAnalysisRevenueRecognition" xlink:to="usfr-mda_ManagementsDiscussionAnalysisRevenueRecognition_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ManagementsDiscussionAnalysisRevenueRecognition_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Revenue Recognition</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_MaterialChanges" xlink:label="usfr-mda_MaterialChanges"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_MaterialChanges_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Material Changes Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_MaterialChanges" xlink:to="usfr-mda_MaterialChanges_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_MaterialChanges_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Material Changes</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_NonperformingAssets" xlink:label="usfr-mda_NonperformingAssets"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_NonperformingAssets_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Nonperforming Assets Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_NonperformingAssets" xlink:to="usfr-mda_NonperformingAssets_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_NonperformingAssets_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Nonperforming Assets</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_OperationsGeneral" xlink:label="usfr-mda_OperationsGeneral"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsGeneral_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">General Operations Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_OperationsGeneral" xlink:to="usfr-mda_OperationsGeneral_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsGeneral_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Operations - General</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_OperationsGeneralNetInterestIncome" xlink:label="usfr-mda_OperationsGeneralNetInterestIncome"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsGeneralNetInterestIncome_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Net Interest Income Note/Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_OperationsGeneralNetInterestIncome" xlink:to="usfr-mda_OperationsGeneralNetInterestIncome_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsGeneralNetInterestIncome_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Net Interest Income</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_OperationsGeneralNoninterestExpense" xlink:label="usfr-mda_OperationsGeneralNoninterestExpense"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsGeneralNoninterestExpense_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Noninterest Expense Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_OperationsGeneralNoninterestExpense" xlink:to="usfr-mda_OperationsGeneralNoninterestExpense_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsGeneralNoninterestExpense_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Noninterest Expense</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_OperationsGeneralNoninterestIncome" xlink:label="usfr-mda_OperationsGeneralNoninterestIncome"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsGeneralNoninterestIncome_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Noninterest Income Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_OperationsGeneralNoninterestIncome" xlink:to="usfr-mda_OperationsGeneralNoninterestIncome_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsGeneralNoninterestIncome_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Noninterest Income</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_OperationsIncomeTaxes" xlink:label="usfr-mda_OperationsIncomeTaxes"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsIncomeTaxes_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Income Taxes Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_OperationsIncomeTaxes" xlink:to="usfr-mda_OperationsIncomeTaxes_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_OperationsIncomeTaxes_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Operations - Income Taxes</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_ProductDevelopments" xlink:label="usfr-mda_ProductDevelopments"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ProductDevelopments_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Product Development Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_ProductDevelopments" xlink:to="usfr-mda_ProductDevelopments_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_ProductDevelopments_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Product Developments</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRisk" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRisk"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRisk_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Quantitative and Qualitative Disclosures about Market Risk Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRisk" xlink:to="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRisk_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRisk_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Quantitative and Qualitative Disclosures about Market Risk</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQualitativeDisclosures" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQualitativeDisclosures"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQualitativeDisclosures_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Quantitative and Qualitative Disclosures about Market Risk - Qualitative Disclosures</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQualitativeDisclosures" xlink:to="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQualitativeDisclosures_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQualitativeDisclosures_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Qualitative Disclosures</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQuantitativeDisclosuresGeneral" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQuantitativeDisclosuresGeneral"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQuantitativeDisclosuresGeneral_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Quantitative and Qualitative Disclosures about Market Risk - Quantitative Disclosures - General</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQuantitativeDisclosuresGeneral" xlink:to="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQuantitativeDisclosuresGeneral_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskQuantitativeDisclosuresGeneral_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">General</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskSensitivityAnalysis" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskSensitivityAnalysis"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskSensitivityAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Quantitative and Qualitative Disclosures about Market Risk - Sensitivity Analysis</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskSensitivityAnalysis" xlink:to="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskSensitivityAnalysis_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskSensitivityAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Sensitivity Analysis</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskTabularPresentation" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskTabularPresentation"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskTabularPresentation_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Quantitative and Qualitative Disclosures about Market Risk - Tabular Presentation</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskTabularPresentation" xlink:to="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskTabularPresentation_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskTabularPresentation_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Tabular Presentation</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskValueRisk" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskValueRisk"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskValueRisk_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Quantitative and Qualitative Disclosures about Market Risk - Value at Risk</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskValueRisk" xlink:to="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskValueRisk_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_QuantitativeQualitativeDisclosuresAboutMarketRiskValueRisk_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Value at Risk</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_RestructuringChargesManagementsDiscussionAnalysis" xlink:label="usfr-mda_RestructuringChargesManagementsDiscussionAnalysis"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_RestructuringChargesManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Restructuring Charges Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_RestructuringChargesManagementsDiscussionAnalysis" xlink:to="usfr-mda_RestructuringChargesManagementsDiscussionAnalysis_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_RestructuringChargesManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Restructuring Charges</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_RestructuringChargesMaterialRestructuringCharges" xlink:label="usfr-mda_RestructuringChargesMaterialRestructuringCharges"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_RestructuringChargesMaterialRestructuringCharges_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Restructuring Charges - Material Restructuring Charges</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_RestructuringChargesMaterialRestructuringCharges" xlink:to="usfr-mda_RestructuringChargesMaterialRestructuringCharges_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_RestructuringChargesMaterialRestructuringCharges_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Material Restructuring Charges</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_RestructuringChargesNatureAmountsExitCosts" xlink:label="usfr-mda_RestructuringChargesNatureAmountsExitCosts"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_RestructuringChargesNatureAmountsExitCosts_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Restructuring Charges - Nature and Amounts of Exit Costs</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_RestructuringChargesNatureAmountsExitCosts" xlink:to="usfr-mda_RestructuringChargesNatureAmountsExitCosts_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_RestructuringChargesNatureAmountsExitCosts_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Nature and Amounts of Exit Costs</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_RestructuringChargesPriorPeriodRestructuringCharges" xlink:label="usfr-mda_RestructuringChargesPriorPeriodRestructuringCharges"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_RestructuringChargesPriorPeriodRestructuringCharges_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Restructuring Charges - Prior Period Restructuring Charges</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_RestructuringChargesPriorPeriodRestructuringCharges" xlink:to="usfr-mda_RestructuringChargesPriorPeriodRestructuringCharges_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_RestructuringChargesPriorPeriodRestructuringCharges_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Prior Period Restructuring Charges</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_Revenues" xlink:label="usfr-mda_Revenues"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_Revenues_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Revenues Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_Revenues" xlink:to="usfr-mda_Revenues_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_Revenues_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Revenues</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_SegmentsBusinessForeignOperationsRisks" xlink:label="usfr-mda_SegmentsBusinessForeignOperationsRisks"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SegmentsBusinessForeignOperationsRisks_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Business Segments - Foreign Operations Risks</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_SegmentsBusinessForeignOperationsRisks" xlink:to="usfr-mda_SegmentsBusinessForeignOperationsRisks_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SegmentsBusinessForeignOperationsRisks_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Foreign Operations Risks</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_SegmentsBusinessManagementsDiscussionAnalysis" xlink:label="usfr-mda_SegmentsBusinessManagementsDiscussionAnalysis"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SegmentsBusinessManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Business Segments Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_SegmentsBusinessManagementsDiscussionAnalysis" xlink:to="usfr-mda_SegmentsBusinessManagementsDiscussionAnalysis_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SegmentsBusinessManagementsDiscussionAnalysis_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Segments of a Business</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_SegmentsBusinessPrincipleMarketsDistribution" xlink:label="usfr-mda_SegmentsBusinessPrincipleMarketsDistribution"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SegmentsBusinessPrincipleMarketsDistribution_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Business Segments - Principle Markets Distribution</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_SegmentsBusinessPrincipleMarketsDistribution" xlink:to="usfr-mda_SegmentsBusinessPrincipleMarketsDistribution_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SegmentsBusinessPrincipleMarketsDistribution_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Principle Markets and Distribution</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_SegmentsBusinessRevenueContributedByTypeProductService" xlink:label="usfr-mda_SegmentsBusinessRevenueContributedByTypeProductService"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SegmentsBusinessRevenueContributedByTypeProductService_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Business Segments - Revenue Contributed by Type of Product or Service</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_SegmentsBusinessRevenueContributedByTypeProductService" xlink:to="usfr-mda_SegmentsBusinessRevenueContributedByTypeProductService_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SegmentsBusinessRevenueContributedByTypeProductService_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Revenue Contributed by Type of Product or Service</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_SelectedFinancialData" xlink:label="usfr-mda_SelectedFinancialData"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SelectedFinancialData_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Selected Financial Data</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_SelectedFinancialData" xlink:to="usfr-mda_SelectedFinancialData_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SelectedFinancialData_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Selected Financial Data</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_SelectedFinancialDataMattersAffectingComparability" xlink:label="usfr-mda_SelectedFinancialDataMattersAffectingComparability"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SelectedFinancialDataMattersAffectingComparability_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Selected Financial Data - Matters Affecting Comparability</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_SelectedFinancialDataMattersAffectingComparability" xlink:to="usfr-mda_SelectedFinancialDataMattersAffectingComparability_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SelectedFinancialDataMattersAffectingComparability_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Matters Affecting Comparability</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_SelectedFinancialDataProFormaInformationAccountingChange" xlink:label="usfr-mda_SelectedFinancialDataProFormaInformationAccountingChange"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SelectedFinancialDataProFormaInformationAccountingChange_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Selected Financial Data - Pro Forma Information for Accounting Change</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_SelectedFinancialDataProFormaInformationAccountingChange" xlink:to="usfr-mda_SelectedFinancialDataProFormaInformationAccountingChange_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SelectedFinancialDataProFormaInformationAccountingChange_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Pro Forma Information for Accounting Change</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_SignificantAccountingPoliciesAssumptions" xlink:label="usfr-mda_SignificantAccountingPoliciesAssumptions"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SignificantAccountingPoliciesAssumptions_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Significant Accounting Policies and Assumptions</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_SignificantAccountingPoliciesAssumptions" xlink:to="usfr-mda_SignificantAccountingPoliciesAssumptions_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_SignificantAccountingPoliciesAssumptions_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Significant Accounting Policies and Assumptions</label>
+    <loc xlink:type="locator" xlink:href="usfr-mda-2005-02-28.xsd#usfr-mda_TheEuroConversion" xlink:label="usfr-mda_TheEuroConversion"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_TheEuroConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/label" xml:lang="en">Euro Conversion Discussion</label>
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-mda_TheEuroConversion" xlink:to="usfr-mda_TheEuroConversion_lbl"/>
+    <label xlink:type="resource" xlink:label="usfr-mda_TheEuroConversion_lbl" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xml:lang="en">Euro Conversion</label>
+  </labelLink>
+</linkbase>

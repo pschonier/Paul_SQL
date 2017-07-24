@@ -1,0 +1,26 @@
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [4/13/2012 - 2:47:42 PM] - Started database synchronization
+-- Template path: N:\FRXWIN\SysData\FRxRm32.TPL
+-- Template version: 6.7.11027
+-- Source database path: N:\FRXWIN\SysData\FRxRm32_bcammuso.MDB
+-- Source database version: 6.7.9111
+(DoSynchronization) Copied template to N:\FRXWIN\SysData\FRxRm32_bcammuso.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table frx_cond_detail...source table did not contain any records.
+-- Copying data from table frx_cond_master...source table did not contain any records.
+-- Copying data from table frx_control...Control record updated (not copied from source).
+-- Copying data from table frx_dl_file_trans...source table did not contain any records.
+-- Copying data from table frx_dl_master...COMPLETED
+-- Copying data from table frx_dl_member...source table did not contain any records.
+-- Copying data from table frx_dl_rules...source table did not contain any records.
+-- Copying data from table frx_ft_methods...source table did not contain any records.
+-- Copying data from table frx_marked_units...source table did not contain any records.
+-- Copying data from table frx_rb_detail...COMPLETED
+-- Copying data from table frx_rb_master...COMPLETED
+-- Copying data from table frx_rule_cond...source table did not contain any records.
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [N:\FRXWIN\SysData\FRxRm32_bcammuso.tmp] to [N:\FRXWIN\SysData\FRxRm32_bcammuso.MDB]
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.

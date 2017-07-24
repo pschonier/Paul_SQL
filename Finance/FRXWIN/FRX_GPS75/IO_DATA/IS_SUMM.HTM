@@ -1,0 +1,706 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 9">
+<link rel=File-List href="./IS_SUMM_files/filelist.xml">
+<link rel=Edit-Time-Data href="./IS_SUMM_files/editdata.mso">
+<link rel=OLE-Object-Data href="./IS_SUMM_files/oledata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>dcosgrove</o:Author>
+  <o:LastAuthor>dcosgrove</o:LastAuthor>
+  <o:Created>2003-03-17T13:58:29Z</o:Created>
+  <o:LastSaved>2003-03-17T13:58:31Z</o:LastSaved>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:DownloadComponents/>
+  <o:LocationOfComponents HRef="file:msowc.cab"/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:1.5in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl25
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\#\,\#\#0\;\\\(\#\,\#\#0\\\)";}
+.xl26
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\#\,\#\#0\;\\\(\#\,\#\#0\\\)";
+	text-align:center-across;}
+.xl27
+	{mso-style-parent:style0;
+	color:black;
+	font-size:16.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\#\,\#\#0\;\\\(\#\,\#\#0\\\)";
+	text-align:center-across;}
+.xl28
+	{mso-style-parent:style0;
+	color:black;
+	font-size:16.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center-across;}
+.xl29
+	{mso-style-parent:style0;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl30
+	{mso-style-parent:style0;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\#\,\#\#0\;\\\(\#\,\#\#0\\\)";}
+.xl31
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\0022$\0022\#\,\#\#0\;\\\(\0022$\0022\#\,\#\#0\\\)";}
+.xl32
+	{mso-style-parent:style0;
+	color:black;
+	font-size:11.0pt;
+	font-weight:700;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl33
+	{mso-style-parent:style0;
+	color:black;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;}
+.xl34
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;}
+.xl35
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\#\,\#\#0\;\\\(\#\,\#\#0\\\)";
+	text-align:right;}
+.xl36
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center-across;}
+.xl37
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl38
+	{mso-style-parent:style0;
+	color:black;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:"\#\,\#\#0\;\\\(\#\,\#\#0\\\)";
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Report</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:Scale>95</x:Scale>
+      <x:HorizontalResolution>600</x:HorizontalResolution>
+      <x:VerticalResolution>600</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:FreezePanes/>
+     <x:SplitHorizontal>5</x:SplitHorizontal>
+     <x:TopRowBottomPane>5</x:TopRowBottomPane>
+     <x:ActivePane>2</x:ActivePane>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+      </x:Pane>
+      <x:Pane>
+       <x:Number>2</x:Number>
+       <x:ActiveRow>0</x:ActiveRow>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:PageBreaks>
+     <x:RowBreaks>
+      <x:RowBreak>
+       <x:Row>53</x:Row>
+      </x:RowBreak>
+     </x:RowBreaks>
+    </x:PageBreaks>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>9600</x:WindowHeight>
+  <x:WindowWidth>15180</x:WindowWidth>
+  <x:WindowTopX>120</x:WindowTopX>
+  <x:WindowTopY>60</x:WindowTopY>
+  <x:Calculation>ManualCalculation</x:Calculation>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple class=xl24>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=650 style='border-collapse:
+ collapse;table-layout:fixed;width:487pt'>
+ <col class=xl24 width=341 style='mso-width-source:userset;mso-width-alt:12470;
+ width:256pt'>
+ <col class=xl25 width=103 span=3 style='mso-width-source:userset;mso-width-alt:
+ 3766;width:77pt'>
+ <tr class=xl24 height=27 style='height:20.25pt'>
+  <td height=27 colspan=4 class=xl28 align=center width=650 style='height:20.25pt;
+  mso-ignore:colspan;width:487pt' x:str="'Explorer Pipeline Company">Explorer
+  Pipeline Company</td>
+ </tr>
+ <tr class=xl24 height=27 style='height:20.25pt'>
+  <td height=27 colspan=4 class=xl28 align=center style='height:20.25pt;
+  mso-ignore:colspan' x:str="'Statement of Income and Expenses">Statement of
+  Income and Expenses</td>
+ </tr>
+ <tr class=xl24 height=17 style='height:12.75pt'>
+  <td height=17 colspan=4 class=xl24 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl24 height=19 style='height:14.25pt'>
+  <td height=19 class=xl24 style='height:14.25pt'></td>
+  <td class=xl32 x:str="'EPCO">EPCO</td>
+  <td class=xl32 x:str="'EPSCO">EPSCO</td>
+  <td class=xl32 x:str="'Consolidated">Consolidated</td>
+ </tr>
+ <tr class=xl24 height=17 style='height:12.75pt'>
+  <td height=17 colspan=4 class=xl24 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl29 height=20 style='height:15.0pt'>
+  <td height=20 class=xl33 style='height:15.0pt' x:str="'Income">Income</td>
+  <td colspan=3 class=xl30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'    Operating revenue - trunk"><span style="mso-spacerun: yes">   
+  </span>Operating revenue - trunk</td>
+  <td class=xl31 align=right x:num="178742772">$178,742,772</td>
+  <td class=xl31 align=right x:num="13287132">$13,287,132</td>
+  <td class=xl31 align=right x:num="192029904">$192,029,904</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'    Allowance oil revenue"><span style="mso-spacerun: yes">   
+  </span>Allowance oil revenue</td>
+  <td class=xl25 align=right x:num="3058636">3,058,636</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="3058636">3,058,636</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'    Storage revenue"><span
+  style="mso-spacerun: yes">    </span>Storage revenue</td>
+  <td class=xl25 align=right x:num="898446">898,446</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="898446">898,446</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'    Interest and other income"><span style="mso-spacerun: yes">   
+  </span>Interest and other income</td>
+  <td class=xl25 align=right x:num="1330325">1,330,325</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="1330325">1,330,325</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td class=xl35 x:str="'-------------------">-------------------</td>
+  <td class=xl35 x:str="'--------------------------------------">--------------------------------------</td>
+  <td class=xl35
+  x:str="'---------------------------------------------------------">---------------------------------------------------------</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'          Total Income"><span style="mso-spacerun: yes">         
+  </span>Total Income</td>
+  <td class=xl25 align=right x:num="184030179">184,030,179</td>
+  <td class=xl25 align=right x:num="13287132">13,287,132</td>
+  <td class=xl25 align=right x:num="197317311">197,317,311</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td class=xl35 x:str="'-------------------">-------------------</td>
+  <td class=xl35 x:str="'--------------------------------------">--------------------------------------</td>
+  <td class=xl35
+  x:str="'---------------------------------------------------------">---------------------------------------------------------</td>
+ </tr>
+ <tr class=xl29 height=20 style='height:15.0pt'>
+  <td height=20 class=xl33 style='height:15.0pt' x:str="'Expenses">Expenses</td>
+  <td colspan=3 class=xl30 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Salaries and wages"><span
+  style="mso-spacerun: yes">   </span>Salaries and wages</td>
+  <td class=xl25 align=right x:num="10850287">10,850,287</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="10850287">10,850,287</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Travel and moving"><span
+  style="mso-spacerun: yes">   </span>Travel and moving</td>
+  <td class=xl25 align=right x:num="669668">669,668</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="669668">669,668</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'   Training, dues &amp; subscriptions"><span style="mso-spacerun:
+  yes">   </span>Training, dues &amp; subscriptions</td>
+  <td class=xl25 align=right x:num="436934">436,934</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="436934">436,934</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'   Operating and office supplies"><span style="mso-spacerun: yes">  
+  </span>Operating and office supplies</td>
+  <td class=xl25 align=right x:num="2077973">2,077,973</td>
+  <td class=xl25 align=right x:num="1467">1,467</td>
+  <td class=xl25 align=right x:num="2079440">2,079,440</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Contributions"><span
+  style="mso-spacerun: yes">   </span>Contributions</td>
+  <td class=xl25 align=right x:num="109828">109,828</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="109828">109,828</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Drag reducer"><span
+  style="mso-spacerun: yes">   </span>Drag reducer</td>
+  <td class=xl25 align=right x:num="4706916">4,706,916</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="4706916">4,706,916</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Vehicle expense"><span
+  style="mso-spacerun: yes">   </span>Vehicle expense</td>
+  <td class=xl25 align=right x:num="245277">245,277</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="245277">245,277</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'   Outside repairs and services"><span style="mso-spacerun: yes">  
+  </span>Outside repairs and services</td>
+  <td class=xl25 align=right x:num="19603705">19,603,705</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="19603705">19,603,705</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Communications"><span
+  style="mso-spacerun: yes">   </span>Communications</td>
+  <td class=xl25 align=right x:num="856565">856,565</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="856565">856,565</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'   Professional fees and expenses"><span style="mso-spacerun: yes">  
+  </span>Professional fees and expenses</td>
+  <td class=xl25 align=right x:num="844023">844,023</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="844023">844,023</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Electric power"><span
+  style="mso-spacerun: yes">   </span>Electric power</td>
+  <td class=xl25 align=right x:num="24323757">24,323,757</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="24323757">24,323,757</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Repair materials"><span
+  style="mso-spacerun: yes">   </span>Repair materials</td>
+  <td class=xl25 align=right x:num="1009883">1,009,883</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="1009883">1,009,883</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Rent"><span
+  style="mso-spacerun: yes">   </span>Rent</td>
+  <td class=xl25 align=right x:num="191339">191,339</td>
+  <td class=xl25 align=right x:num="369141">369,141</td>
+  <td class=xl25 align=right x:num="560480">560,480</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Interest"><span
+  style="mso-spacerun: yes">   </span>Interest</td>
+  <td class=xl25 align=right x:num="5469495">5,469,495</td>
+  <td class=xl25 align=right x:num>868</td>
+  <td class=xl25 align=right x:num="5470363">5,470,363</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'   Debt expense amortized"><span style="mso-spacerun: yes">  
+  </span>Debt expense amortized</td>
+  <td class=xl25 align=right x:num="533488">533,488</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="533488">533,488</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Depreciation"><span
+  style="mso-spacerun: yes">   </span>Depreciation</td>
+  <td class=xl25 align=right x:num="8520579">8,520,579</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="8520579">8,520,579</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Product loss"><span
+  style="mso-spacerun: yes">   </span>Product loss</td>
+  <td class=xl25 align=right x:num="4706148">4,706,148</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="4706148">4,706,148</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Benefit plans"><span
+  style="mso-spacerun: yes">   </span>Benefit plans</td>
+  <td class=xl25 align=right x:num="2371468">2,371,468</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="2371468">2,371,468</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'   Insurance"><span
+  style="mso-spacerun: yes">   </span>Insurance</td>
+  <td class=xl25 align=right x:num="1189270">1,189,270</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="1189270">1,189,270</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'   Taxes, except income"><span style="mso-spacerun: yes">  
+  </span>Taxes, except income</td>
+  <td class=xl25 align=right x:num="5625292">5,625,292</td>
+  <td class=xl25 align=right x:num="129244">129,244</td>
+  <td class=xl25 align=right x:num="5754536">5,754,536</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'   Miscellaneous charges (credits)"><span style="mso-spacerun:
+  yes">   </span>Miscellaneous charges (credits)</td>
+  <td class=xl25 align=right x:num="211990">211,990</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="211990">211,990</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td class=xl35 x:str="'-------------------">-------------------</td>
+  <td class=xl35 x:str="'--------------------------------------">--------------------------------------</td>
+  <td class=xl35
+  x:str="'---------------------------------------------------------">---------------------------------------------------------</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'      Total Expenses"><span
+  style="mso-spacerun: yes">      </span>Total Expenses</td>
+  <td class=xl25 align=right x:num="94553885">94,553,885</td>
+  <td class=xl25 align=right x:num="500720">500,720</td>
+  <td class=xl25 align=right x:num="95054605">95,054,605</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td class=xl35 x:str="'-------------------">-------------------</td>
+  <td class=xl35 x:str="'--------------------------------------">--------------------------------------</td>
+  <td class=xl35
+  x:str="'---------------------------------------------------------">---------------------------------------------------------</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'Net Profit from Operations">Net Profit from Operations</td>
+  <td class=xl25 align=right x:num="89476294">89,476,294</td>
+  <td class=xl25 align=right x:num="12786412">12,786,412</td>
+  <td class=xl25 align=right x:num="102262706">102,262,706</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'Provision for Income Taxes">Provision for Income Taxes</td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'     Current"><span
+  style="mso-spacerun: yes">     </span>Current</td>
+  <td class=xl25 align=right x:num="37740502">37,740,502</td>
+  <td class=xl25 align=right x:num="65902">65,902</td>
+  <td class=xl25 align=right x:num="37806404">37,806,404</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'     Deferred"><span
+  style="mso-spacerun: yes">     </span>Deferred</td>
+  <td class=xl25 align=right x:num="-220735">(220,735)</td>
+  <td class=xl25></td>
+  <td class=xl25 align=right x:num="-220735">(220,735)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td class=xl35 x:str="'-------------------">-------------------</td>
+  <td class=xl35 x:str="'--------------------------------------">--------------------------------------</td>
+  <td class=xl35
+  x:str="'---------------------------------------------------------">---------------------------------------------------------</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'          Total Income Taxes"><span style="mso-spacerun:
+  yes">          </span>Total Income Taxes</td>
+  <td class=xl25 align=right x:num="37519767">37,519,767</td>
+  <td class=xl25 align=right x:num="65902">65,902</td>
+  <td class=xl25 align=right x:num="37585669">37,585,669</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td class=xl35 x:str="'-------------------">-------------------</td>
+  <td class=xl35 x:str="'--------------------------------------">--------------------------------------</td>
+  <td class=xl35
+  x:str="'---------------------------------------------------------">---------------------------------------------------------</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'
+  x:str="'Net Profit after Income Taxes">Net Profit after Income Taxes</td>
+  <td class=xl31 align=right x:num="51956527">$51,956,527</td>
+  <td class=xl31 align=right x:num="12720510">$12,720,510</td>
+  <td class=xl31 align=right x:num="64677037">$64,677,037</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td class=xl35 x:str="' ==================="><span style="mso-spacerun:
+  yes"> </span>===================</td>
+  <td class=xl35 x:str="' ======================================"><span
+  style="mso-spacerun: yes"> </span>======================================</td>
+  <td class=xl35
+  x:str="' ========================================================="><span
+  style="mso-spacerun:
+  yes"> </span>=========================================================</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=4 class=xl36 align=center style='height:12.75pt;
+  mso-ignore:colspan' x:str="'03/17/03">03/17/03</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=4 class=xl36 align=center style='height:12.75pt;
+  mso-ignore:colspan' x:str="'07:58 AM">07:58 AM</td>
+ </tr>
+ <tr height=27 style='page-break-before:always;height:20.25pt'>
+  <td height=27 colspan=4 class=xl28 align=center style='height:20.25pt;
+  mso-ignore:colspan' x:str="'Explorer Pipeline Company">Explorer Pipeline
+  Company</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 colspan=4 class=xl28 align=center style='height:20.25pt;
+  mso-ignore:colspan' x:str="'Statement of Income and Expenses">Statement of
+  Income and Expenses</td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 colspan=4 class=xl28 align=center style='height:20.25pt;
+  mso-ignore:colspan' x:str="'Exception Report - Missing and Duplicate Accounts">Exception
+  Report - Missing and Duplicate Accounts</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl37 style='height:12.75pt' x:str="'Account Code">Account
+  Code</td>
+  <td class=xl38 x:str="'Occurrences">Occurrences</td>
+  <td class=xl38 x:str="'Row Number (dups)">Row Number (dups)</td>
+  <td class=xl38 x:str="'Row Code (dups)">Row Code (dups)</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'Unit:EPCO:Report">Unit:EPCO:Report</td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'Missing:">Missing:</td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt' x:str="'820000-9-000-0-0000">820000-9-000-0-0000</td>
+  <td colspan=2 class=xl31 style='mso-ignore:colspan'></td>
+  <td class=xl25></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl24 style='height:12.75pt'></td>
+  <td colspan=3 class=xl25 style='mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=4 class=xl36 align=center style='height:12.75pt;
+  mso-ignore:colspan' x:str="'03/17/03">03/17/03</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=4 class=xl36 align=center style='height:12.75pt;
+  mso-ignore:colspan' x:str="'07:58 AM">07:58 AM</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=341 style='width:256pt'></td>
+  <td width=103 style='width:77pt'></td>
+  <td width=103 style='width:77pt'></td>
+  <td width=103 style='width:77pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</body>
+
+</html>

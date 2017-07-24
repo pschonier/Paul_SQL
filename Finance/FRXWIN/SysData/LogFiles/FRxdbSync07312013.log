@@ -1,0 +1,32 @@
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [7/31/2013 - 11:19:14 AM] - Started database synchronization
+-- Template path: N:\FRXWIN\SysData\frxsys32.tpl
+-- Template version: 6.7.11027
+-- Source database path: N:\FRXWIN\SysData\frxsys32.mdb
+-- Source database version: 6.7.182
+(DoSynchronization) Copied template to N:\FRXWIN\SysData\frxsys32.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table ActiveUsers...source table did not contain any records.
+-- Copying data from table Admin...COMPLETED
+-- Copying data from table AdminControl...source table did not contain any records.
+-- Copying data from table Company...COMPLETED
+-- Copying data from table CompanyException...source table did not contain any records.
+-- Copying data from table Control...Control record updated (not copied from source).
+-- Copying data from table Exception...source table did not contain any records.
+-- Copying data from table Fonts...COMPLETED
+-- Copying data from table GLIndexInfo...table doesn't exist in source database.
+-- Copying data from table Groups...source table did not contain any records.
+-- Copying data from table Membership...source table did not contain any records.
+-- Copying data from table RegisteredSys...COMPLETED
+-- Copying data from table Spec_Set_Master...COMPLETED
+-- Copying data from table SpecSetControl...COMPLETED
+-- Copying data from table Style...COMPLETED
+-- Copying data from table Users...COMPLETED
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [N:\FRXWIN\SysData\frxsys32.tmp] to [N:\FRXWIN\SysData\frxsys32.mdb]
+(UpgradeGroupSecurity) Upgrading group security...no update necessary.
+(AddSpecSetNameToExceptions) Updating spec set security...no update necessary.
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.

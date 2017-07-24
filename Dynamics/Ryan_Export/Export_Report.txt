@@ -1,0 +1,115 @@
+Operation stopped...
+
+- Initializing Data Flow Task (Success)
+
+- Initializing Connections (Success)
+
+- Setting SQL Command (Success)
+
+- Setting Source Connection (Success)
+
+- Setting Destination Connection (Success)
+
+- Validating (Success)
+
+- Saving (Success)
+
+- Prepare for Execute (Success)
+
+- Pre-execute (Success)
+
+- Executing (Success)
+
+- Copying to `GL00100` (Success)
+	* 4857 rows transferred
+
+- Copying to `GL00105` (Success)
+	* 4857 rows transferred
+
+- Copying to `GL10110` (Success)
+	* 10329 rows transferred
+
+- Copying to `GL10111` (Success)
+	* 209231 rows transferred
+
+- Copying to `GL20000` (Success)
+	* 65743 rows transferred
+
+- Copying to `GL30000` (Error)
+	Messages
+	* Error 0xc0202009: Data Flow Task 2: SSIS Error Code DTS_E_OLEDBERROR.  An OLE DB error has occurred. Error code: 0x8007000E.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0047022: Data Flow Task 2: SSIS Error Code DTS_E_PROCESSINPUTFAILED.  The ProcessInput method on component "Destination 5 - GL30000" (214) failed with error code 0xC0202009 while processing input "Destination Input" (225). The identified component returned an error from the ProcessInput method. The error is specific to the component, but the error is fatal and will cause the Data Flow task to stop running.  There may be error messages posted before this with more information about the failure.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc02020c4: Data Flow Task 2: The attempt to add a row to the Data Flow task buffer failed with error code 0xC0047020.
+	 (SQL Server Import and Export Wizard)
+	
+	* Error 0xc0047038: Data Flow Task 2: SSIS Error Code DTS_E_PRIMEOUTPUTFAILED.  The PrimeOutput method on Source 5 - GL30000 returned error code 0xC02020C4.  The component returned a failure code when the pipeline engine called PrimeOutput(). The meaning of the failure code is defined by the component, but the error is fatal and the pipeline stopped executing.  There may be error messages posted before this with more information about the failure.
+	 (SQL Server Import and Export Wizard)
+	
+
+- Copying to `MC020103` (Success)
+	* 0 rows transferred
+
+- Copying to `PM00200` (Success)
+	* 7886 rows transferred
+
+- Copying to `PM00400` (Success)
+	* 389119 rows transferred
+
+- Copying to `PM10000` (Success)
+	* 157 rows transferred
+
+- Copying to `PM10300` (Stopped)
+
+- Copying to `PM10400` (Stopped)
+
+- Copying to `PM20000` (Stopped)
+
+- Copying to `PM30200` (Stopped)
+
+- Copying to `PM30600` (Stopped)
+
+- Copying to `PM80600` (Stopped)
+
+- Copying to `SY00600` (Stopped)
+
+- Copying to `SY00900` (Stopped)
+
+- Post-execute (Success)
+	Messages
+	* Information 0x4004300b: Data Flow Task 1: "Destination - GL00100" wrote 4857 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination 1 - GL00105" wrote 4857 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination 2 - GL10110" wrote 10329 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination 3 - GL10111" wrote 209231 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 1: "Destination 4 - GL20000" wrote 65743 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 2: "Destination 5 - GL30000" wrote 169279 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 2: "Destination 6 - MC020103" wrote 0 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 2: "Destination 7 - PM00200" wrote 7886 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 2: "Destination 8 - PM00400" wrote 389119 rows.
+	 (SQL Server Import and Export Wizard)
+	
+	* Information 0x4004300b: Data Flow Task 2: "Destination 9 - PM10000" wrote 157 rows.
+	 (SQL Server Import and Export Wizard)
+	
+
+
+

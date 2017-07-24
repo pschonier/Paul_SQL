@@ -1,0 +1,26 @@
+
+
+----------------------------------------------------------------------------------------------------
+(Synchronizedbs) [12/17/2008 - 10:51:06 AM] - Started database synchronization
+-- Template path: \\Filesvr-tul\Data\FRXWIN\SysData\FRxRm32.TPL
+-- Template version: 6.7.8069
+-- Source database path: \\Filesvr-tul\Data\FRXWIN\SysData\FRxRm32_cmcnern.MDB
+-- Source database version: 6.7.182
+(DoSynchronization) Copied template to \\Filesvr-tul\Data\FRXWIN\SysData\FRxRm32_cmcnern.tmp
+(CopyTableData) Copying table data to new database.
+-- Copying data from table frx_cond_detail...source table did not contain any records.
+-- Copying data from table frx_cond_master...source table did not contain any records.
+-- Copying data from table frx_control...Control record updated (not copied from source).
+-- Copying data from table frx_dl_file_trans...source table did not contain any records.
+-- Copying data from table frx_dl_master...source table did not contain any records.
+-- Copying data from table frx_dl_member...source table did not contain any records.
+-- Copying data from table frx_dl_rules...source table did not contain any records.
+-- Copying data from table frx_ft_methods...source table did not contain any records.
+-- Copying data from table frx_marked_units...source table did not contain any records.
+-- Copying data from table frx_rb_detail...source table did not contain any records.
+-- Copying data from table frx_rb_master...source table did not contain any records.
+-- Copying data from table frx_rule_cond...source table did not contain any records.
+(DoSynchronization) Replacing the original database with the converted file...COMPLETED
+(DoSynchronization) Updated database copied from [\\Filesvr-tul\Data\FRXWIN\SysData\FRxRm32_cmcnern.tmp] to [\\Filesvr-tul\Data\FRXWIN\SysData\FRxRm32_cmcnern.MDB]
+(DoSynchronization) Compacting the database file...----------------------------------------------------------------------------------------------------
+(Synchronizedbs) Database conversion completed successfully.

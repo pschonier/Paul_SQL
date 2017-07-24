@@ -1,0 +1,2304 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/2/2015 9:30:39 AM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="DBSVR-PCC"
+  DTS:CreatorName="EPL\pschonier"
+  DTS:Description="SSIS Package Description"
+  DTS:DTSID="{34EFE955-C6BF-4FC7-AD8D-920124D46A35}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="1033"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="PPMSUpdate"
+  DTS:ProtectionLevel="0"
+  DTS:VersionGUID="{9D03B9E7-C81B-4D35-8B73-A91F64779998}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C10FD1CA-A427-4256-87E4-A6C9EECE51F7}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DBSVR-PCC;Initial Catalog=PPMS;Provider=SQLNCLI11;Integrated Security=SSPI;Auto Translate=false;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{77ED4A18-1EB6-4B8D-9E93-0DA3B974EE75}"
+      DTS:ObjectName="SourceConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=ppmdb-pcc;Initial Catalog=PPMS;Provider=SQLOLEDB;Integrated Security=SSPI;Auto Translate=false;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task 1"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:DTSID="{E4EC63A1-5DD9-4E50-B850-39654B30630A}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task 1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task 1\Destination - tbl_ticket"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Destination - tbl_ticket"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[tbl_ticket]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Destination - tbl_ticket.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[ticketId]"
+                      cachedDataType="i4"
+                      cachedName="ticketId"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketId]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[time]"
+                      cachedDataType="i4"
+                      cachedName="time"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[time]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[time]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[offset]"
+                      cachedDataType="i2"
+                      cachedName="offset"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[offset]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[offset]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[batMeter]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="16"
+                      cachedName="batMeter"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[batMeter]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[batMeter]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[meterName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="16"
+                      cachedName="meterName"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[meterName]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[meterName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[site]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="site"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[site]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[site]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[pipesys]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="pipesys"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[pipesys]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[pipesys]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[location]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="15"
+                      cachedName="location"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[location]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[location]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[ticketPrefix]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="ticketPrefix"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketPrefix]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketPrefix]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[ticketNumber]"
+                      cachedDataType="i4"
+                      cachedName="ticketNumber"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketNumber]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketNumber]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[ticketRevision]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="ticketRevision"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketRevision]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketRevision]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[ticketPrefixNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="12"
+                      cachedName="ticketPrefixNumber"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketPrefixNumber]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketPrefixNumber]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[startTime]"
+                      cachedDataType="i4"
+                      cachedName="startTime"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[startTime]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[startTime]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[startOffset]"
+                      cachedDataType="i2"
+                      cachedName="startOffset"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[startOffset]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[startOffset]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[endTime]"
+                      cachedDataType="i4"
+                      cachedName="endTime"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[endTime]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[endTime]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[endOffset]"
+                      cachedDataType="i2"
+                      cachedName="endOffset"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[endOffset]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[endOffset]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[schedVolume]"
+                      cachedDataType="r4"
+                      cachedName="schedVolume"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[schedVolume]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedVolume]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[schedStripRate]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="5"
+                      cachedName="schedStripRate"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[schedStripRate]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedStripRate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[schedOriginRate]"
+                      cachedDataType="i4"
+                      cachedName="schedOriginRate"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[schedOriginRate]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedOriginRate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[grossVol]"
+                      cachedDataType="i4"
+                      cachedName="grossVol"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[grossVol]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[grossVol]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[netVol]"
+                      cachedDataType="i4"
+                      cachedName="netVol"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[netVol]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[netVol]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[remote]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="remote"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[remote]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[remote]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[nomId]"
+                      cachedDataType="i8"
+                      cachedName="nomId"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[nomId]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[nomId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[sequence]"
+                      cachedDataType="i4"
+                      cachedName="sequence"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[sequence]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[sequence]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[partBatch]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="partBatch"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[partBatch]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[partBatch]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[autoBatchEnd]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="autoBatchEnd"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[autoBatchEnd]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[autoBatchEnd]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[batchId]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="16"
+                      cachedName="batchId"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[batchId]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[batchId]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[product]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="product"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[product]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[product]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[cycle]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="cycle"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[cycle]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[cycle]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[origin]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="origin"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[origin]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[origin]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[shipper]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="shipper"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[shipper]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[shipper]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[verify]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="verify"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[verify]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[verify]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[custody]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="custody"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[custody]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[custody]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[receiptDelivery]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="receiptDelivery"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[receiptDelivery]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[receiptDelivery]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[productProfile]"
+                      cachedDataType="i4"
+                      cachedName="productProfile"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[productProfile]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[productProfile]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[profileDescription]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8"
+                      cachedName="profileDescription"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[profileDescription]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[profileDescription]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[supplierFinalConnection]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="supplierFinalConnection"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[supplierFinalConnection]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[supplierFinalConnection]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[connectionCode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="connectionCode"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[connectionCode]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[connectionCode]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[connectionCompany]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="connectionCompany"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[connectionCompany]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[connectionCompany]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[expTank1]"
+                      cachedDataType="i4"
+                      cachedName="expTank1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[expTank1]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[expTank1]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[expTank2]"
+                      cachedDataType="i4"
+                      cachedName="expTank2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[expTank2]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[expTank2]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[schedComment]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="40"
+                      cachedName="schedComment"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[schedComment]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedComment]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[contComment]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="contComment"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[contComment]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[contComment]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[stockComment]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="stockComment"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[stockComment]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[stockComment]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[errorComment]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="errorComment"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[errorComment]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[errorComment]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[recordEdit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="recordEdit"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[recordEdit]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[recordEdit]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[netVolEdit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="netVolEdit"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[netVolEdit]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[netVolEdit]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[wad]"
+                      cachedDataType="r4"
+                      cachedName="wad"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wad]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wad]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[wap]"
+                      cachedDataType="r4"
+                      cachedName="wap"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wap]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wap]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[wat]"
+                      cachedDataType="r4"
+                      cachedName="wat"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wat]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wat]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[wave1]"
+                      cachedDataType="r4"
+                      cachedName="wave1"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wave1]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wave1]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[wave2]"
+                      cachedDataType="r4"
+                      cachedName="wave2"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wave2]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wave2]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[wa_vcf]"
+                      cachedDataType="r4"
+                      cachedName="wa_vcf"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wa_vcf]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wa_vcf]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[wa_cpl]"
+                      cachedDataType="r4"
+                      cachedName="wa_cpl"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wa_cpl]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wa_cpl]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[apiTable]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="apiTable"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[apiTable]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[apiTable]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[kFactor]"
+                      cachedDataType="i4"
+                      cachedName="kFactor"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[kFactor]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[kFactor]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[t4Transfer]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="t4Transfer"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[t4Transfer]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[t4Transfer]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[tisTransfer]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="tisTransfer"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[tisTransfer]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[tisTransfer]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[recalc]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="recalc"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[recalc]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[recalc]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[fullTransaction]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="fullTransaction"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[fullTransaction]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[fullTransaction]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].Columns[rowguid]"
+                      cachedDataType="guid"
+                      cachedName="rowguid"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[rowguid]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[rowguid]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketId]"
+                      dataType="i4"
+                      name="ticketId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[time]"
+                      dataType="i4"
+                      name="time" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[offset]"
+                      dataType="i2"
+                      name="offset" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[batMeter]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="batMeter" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[meterName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="meterName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[site]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="site" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[pipesys]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="pipesys" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="location" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketPrefix]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="ticketPrefix" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketNumber]"
+                      dataType="i4"
+                      name="ticketNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketRevision]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ticketRevision" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[ticketPrefixNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="ticketPrefixNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[startTime]"
+                      dataType="i4"
+                      name="startTime" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[startOffset]"
+                      dataType="i2"
+                      name="startOffset" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[endTime]"
+                      dataType="i4"
+                      name="endTime" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[endOffset]"
+                      dataType="i2"
+                      name="endOffset" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[schedVolume]"
+                      dataType="r4"
+                      name="schedVolume" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[schedStripRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="schedStripRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[schedOriginRate]"
+                      dataType="i4"
+                      name="schedOriginRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[grossVol]"
+                      dataType="i4"
+                      name="grossVol" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[netVol]"
+                      dataType="i4"
+                      name="netVol" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[remote]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="remote" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[nomId]"
+                      dataType="i8"
+                      name="nomId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[sequence]"
+                      dataType="i4"
+                      name="sequence" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[partBatch]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="partBatch" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[autoBatchEnd]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="autoBatchEnd" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[batchId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="batchId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[product]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="product" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[cycle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="cycle" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[origin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="origin" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[shipper]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="shipper" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[verify]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="verify" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[custody]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="custody" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[receiptDelivery]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="receiptDelivery" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[productProfile]"
+                      dataType="i4"
+                      name="productProfile" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[profileDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="profileDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[supplierFinalConnection]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="supplierFinalConnection" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[connectionCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="connectionCode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[connectionCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="connectionCompany" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[expTank1]"
+                      dataType="i4"
+                      name="expTank1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[expTank2]"
+                      dataType="i4"
+                      name="expTank2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[schedComment]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="schedComment" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[contComment]"
+                      codePage="1252"
+                      dataType="text"
+                      name="contComment" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[stockComment]"
+                      codePage="1252"
+                      dataType="text"
+                      name="stockComment" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[errorComment]"
+                      codePage="1252"
+                      dataType="text"
+                      name="errorComment" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[recordEdit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="recordEdit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[netVolEdit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="netVolEdit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wad]"
+                      dataType="r4"
+                      name="wad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wap]"
+                      dataType="r4"
+                      name="wap" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wat]"
+                      dataType="r4"
+                      name="wat" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wave1]"
+                      dataType="r4"
+                      name="wave1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wave2]"
+                      dataType="r4"
+                      name="wave2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wa_vcf]"
+                      dataType="r4"
+                      name="wa_vcf" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[wa_cpl]"
+                      dataType="r4"
+                      name="wa_cpl" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[apiTable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="apiTable" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[kFactor]"
+                      dataType="i4"
+                      name="kFactor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[t4Transfer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="t4Transfer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[tisTransfer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="tisTransfer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[recalc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="recalc" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[fullTransaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="fullTransaction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input].ExternalColumns[rowguid]"
+                      dataType="guid"
+                      name="rowguid" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Destination - tbl_ticket.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - tbl_ticket.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Destination - tbl_ticket.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Destination - tbl_ticket.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task 1\Source - tbl_ticket"
+              componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Source - tbl_ticket"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[tbl_ticket]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task 1\Source - tbl_ticket.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionOLEDB]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionOLEDB]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketId]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketId]"
+                      name="ticketId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[time]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[time]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[time]"
+                      name="time"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[offset]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[offset]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[offset]"
+                      name="offset"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[batMeter]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[batMeter]"
+                      length="16"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[batMeter]"
+                      name="batMeter"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[meterName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[meterName]"
+                      length="16"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[meterName]"
+                      name="meterName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[site]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[site]"
+                      length="15"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[site]"
+                      name="site"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[pipesys]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[pipesys]"
+                      length="15"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[pipesys]"
+                      name="pipesys"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[location]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[location]"
+                      length="15"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[location]"
+                      name="location"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketPrefix]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketPrefix]"
+                      length="4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketPrefix]"
+                      name="ticketPrefix"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketNumber]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketNumber]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketNumber]"
+                      name="ticketNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketRevision]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketRevision]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketRevision]"
+                      name="ticketRevision"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketPrefixNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketPrefixNumber]"
+                      length="12"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[ticketPrefixNumber]"
+                      name="ticketPrefixNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[startTime]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[startTime]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[startTime]"
+                      name="startTime"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[startOffset]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[startOffset]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[startOffset]"
+                      name="startOffset"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[endTime]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[endTime]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[endTime]"
+                      name="endTime"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[endOffset]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[endOffset]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[endOffset]"
+                      name="endOffset"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedVolume]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[schedVolume]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedVolume]"
+                      name="schedVolume"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedStripRate]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[schedStripRate]"
+                      length="5"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedStripRate]"
+                      name="schedStripRate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedOriginRate]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[schedOriginRate]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedOriginRate]"
+                      name="schedOriginRate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[grossVol]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[grossVol]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[grossVol]"
+                      name="grossVol"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[netVol]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[netVol]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[netVol]"
+                      name="netVol"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[remote]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[remote]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[remote]"
+                      name="remote"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[nomId]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[nomId]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[nomId]"
+                      name="nomId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[sequence]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[sequence]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[sequence]"
+                      name="sequence"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[partBatch]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[partBatch]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[partBatch]"
+                      name="partBatch"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[autoBatchEnd]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[autoBatchEnd]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[autoBatchEnd]"
+                      name="autoBatchEnd"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[batchId]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[batchId]"
+                      length="16"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[batchId]"
+                      name="batchId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[product]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[product]"
+                      length="4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[product]"
+                      name="product"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[cycle]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[cycle]"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[cycle]"
+                      name="cycle"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[origin]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[origin]"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[origin]"
+                      name="origin"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[shipper]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[shipper]"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[shipper]"
+                      name="shipper"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[verify]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[verify]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[verify]"
+                      name="verify"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[custody]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[custody]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[custody]"
+                      name="custody"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[receiptDelivery]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[receiptDelivery]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[receiptDelivery]"
+                      name="receiptDelivery"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[productProfile]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[productProfile]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[productProfile]"
+                      name="productProfile"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[profileDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[profileDescription]"
+                      length="8"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[profileDescription]"
+                      name="profileDescription"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[supplierFinalConnection]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[supplierFinalConnection]"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[supplierFinalConnection]"
+                      name="supplierFinalConnection"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[connectionCode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[connectionCode]"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[connectionCode]"
+                      name="connectionCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[connectionCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[connectionCompany]"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[connectionCompany]"
+                      name="connectionCompany"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[expTank1]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[expTank1]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[expTank1]"
+                      name="expTank1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[expTank2]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[expTank2]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[expTank2]"
+                      name="expTank2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedComment]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[schedComment]"
+                      length="40"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[schedComment]"
+                      name="schedComment"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[contComment]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[contComment]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[contComment]"
+                      name="contComment"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[stockComment]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[stockComment]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[stockComment]"
+                      name="stockComment"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[errorComment]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[errorComment]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[errorComment]"
+                      name="errorComment"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[recordEdit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[recordEdit]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[recordEdit]"
+                      name="recordEdit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[netVolEdit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[netVolEdit]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[netVolEdit]"
+                      name="netVolEdit"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wad]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wad]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wad]"
+                      name="wad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wap]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wap]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wap]"
+                      name="wap"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wat]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wat]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wat]"
+                      name="wat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wave1]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wave1]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wave1]"
+                      name="wave1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wave2]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wave2]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wave2]"
+                      name="wave2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wa_vcf]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wa_vcf]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wa_vcf]"
+                      name="wa_vcf"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wa_cpl]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wa_cpl]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[wa_cpl]"
+                      name="wa_cpl"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[apiTable]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[apiTable]"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[apiTable]"
+                      name="apiTable"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[kFactor]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[kFactor]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[kFactor]"
+                      name="kFactor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[t4Transfer]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[t4Transfer]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[t4Transfer]"
+                      name="t4Transfer"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[tisTransfer]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[tisTransfer]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[tisTransfer]"
+                      name="tisTransfer"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[recalc]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[recalc]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[recalc]"
+                      name="recalc"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[fullTransaction]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[fullTransaction]"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[fullTransaction]"
+                      name="fullTransaction"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[rowguid]"
+                      dataType="guid"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].Columns[rowguid]"
+                      name="rowguid"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketId]"
+                      dataType="i4"
+                      name="ticketId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[time]"
+                      dataType="i4"
+                      name="time" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[offset]"
+                      dataType="i2"
+                      name="offset" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[batMeter]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="batMeter" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[meterName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="meterName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[site]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="site" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[pipesys]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="pipesys" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      name="location" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketPrefix]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="ticketPrefix" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketNumber]"
+                      dataType="i4"
+                      name="ticketNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketRevision]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ticketRevision" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[ticketPrefixNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      name="ticketPrefixNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[startTime]"
+                      dataType="i4"
+                      name="startTime" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[startOffset]"
+                      dataType="i2"
+                      name="startOffset" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[endTime]"
+                      dataType="i4"
+                      name="endTime" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[endOffset]"
+                      dataType="i2"
+                      name="endOffset" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[schedVolume]"
+                      dataType="r4"
+                      name="schedVolume" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[schedStripRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      name="schedStripRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[schedOriginRate]"
+                      dataType="i4"
+                      name="schedOriginRate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[grossVol]"
+                      dataType="i4"
+                      name="grossVol" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[netVol]"
+                      dataType="i4"
+                      name="netVol" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[remote]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="remote" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[nomId]"
+                      dataType="i8"
+                      name="nomId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[sequence]"
+                      dataType="i4"
+                      name="sequence" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[partBatch]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="partBatch" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[autoBatchEnd]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="autoBatchEnd" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[batchId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      name="batchId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[product]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="product" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[cycle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="cycle" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[origin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="origin" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[shipper]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="shipper" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[verify]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="verify" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[custody]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="custody" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[receiptDelivery]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="receiptDelivery" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[productProfile]"
+                      dataType="i4"
+                      name="productProfile" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[profileDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="profileDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[supplierFinalConnection]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="supplierFinalConnection" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[connectionCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="connectionCode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[connectionCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="connectionCompany" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[expTank1]"
+                      dataType="i4"
+                      name="expTank1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[expTank2]"
+                      dataType="i4"
+                      name="expTank2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[schedComment]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      name="schedComment" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[contComment]"
+                      codePage="1252"
+                      dataType="text"
+                      name="contComment" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[stockComment]"
+                      codePage="1252"
+                      dataType="text"
+                      name="stockComment" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[errorComment]"
+                      codePage="1252"
+                      dataType="text"
+                      name="errorComment" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[recordEdit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="recordEdit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[netVolEdit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="netVolEdit" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wad]"
+                      dataType="r4"
+                      name="wad" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wap]"
+                      dataType="r4"
+                      name="wap" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wat]"
+                      dataType="r4"
+                      name="wat" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wave1]"
+                      dataType="r4"
+                      name="wave1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wave2]"
+                      dataType="r4"
+                      name="wave2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wa_vcf]"
+                      dataType="r4"
+                      name="wa_vcf" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[wa_cpl]"
+                      dataType="r4"
+                      name="wa_cpl" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[apiTable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="apiTable" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[kFactor]"
+                      dataType="i4"
+                      name="kFactor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[t4Transfer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="t4Transfer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[tisTransfer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="tisTransfer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[recalc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="recalc" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[fullTransaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="fullTransaction" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output].ExternalColumns[rowguid]"
+                      dataType="guid"
+                      name="rowguid" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketId]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketId]"
+                      name="ticketId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[time]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[time]"
+                      name="time" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[offset]"
+                      dataType="i2"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[offset]"
+                      name="offset" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[batMeter]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[batMeter]"
+                      name="batMeter" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[meterName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[meterName]"
+                      name="meterName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[site]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[site]"
+                      name="site" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[pipesys]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[pipesys]"
+                      name="pipesys" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="15"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[location]"
+                      name="location" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketPrefix]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketPrefix]"
+                      name="ticketPrefix" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketNumber]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketNumber]"
+                      name="ticketNumber" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketRevision]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketRevision]"
+                      name="ticketRevision" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketPrefixNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="12"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ticketPrefixNumber]"
+                      name="ticketPrefixNumber" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[startTime]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[startTime]"
+                      name="startTime" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[startOffset]"
+                      dataType="i2"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[startOffset]"
+                      name="startOffset" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[endTime]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[endTime]"
+                      name="endTime" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[endOffset]"
+                      dataType="i2"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[endOffset]"
+                      name="endOffset" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[schedVolume]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[schedVolume]"
+                      name="schedVolume" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[schedStripRate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="5"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[schedStripRate]"
+                      name="schedStripRate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[schedOriginRate]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[schedOriginRate]"
+                      name="schedOriginRate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[grossVol]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[grossVol]"
+                      name="grossVol" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[netVol]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[netVol]"
+                      name="netVol" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[remote]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[remote]"
+                      name="remote" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[nomId]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[nomId]"
+                      name="nomId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[sequence]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[sequence]"
+                      name="sequence" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[partBatch]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[partBatch]"
+                      name="partBatch" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[autoBatchEnd]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[autoBatchEnd]"
+                      name="autoBatchEnd" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[batchId]"
+                      codePage="1252"
+                      dataType="str"
+                      length="16"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[batchId]"
+                      name="batchId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[product]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[product]"
+                      name="product" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[cycle]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[cycle]"
+                      name="cycle" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[origin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[origin]"
+                      name="origin" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[shipper]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[shipper]"
+                      name="shipper" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[verify]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[verify]"
+                      name="verify" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[custody]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[custody]"
+                      name="custody" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[receiptDelivery]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[receiptDelivery]"
+                      name="receiptDelivery" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[productProfile]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[productProfile]"
+                      name="productProfile" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[profileDescription]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[profileDescription]"
+                      name="profileDescription" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[supplierFinalConnection]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[supplierFinalConnection]"
+                      name="supplierFinalConnection" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[connectionCode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[connectionCode]"
+                      name="connectionCode" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[connectionCompany]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[connectionCompany]"
+                      name="connectionCompany" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[expTank1]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[expTank1]"
+                      name="expTank1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[expTank2]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[expTank2]"
+                      name="expTank2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[schedComment]"
+                      codePage="1252"
+                      dataType="str"
+                      length="40"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[schedComment]"
+                      name="schedComment" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[contComment]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[contComment]"
+                      name="contComment" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[stockComment]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[stockComment]"
+                      name="stockComment" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[errorComment]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[errorComment]"
+                      name="errorComment" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[recordEdit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[recordEdit]"
+                      name="recordEdit" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[netVolEdit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[netVolEdit]"
+                      name="netVolEdit" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wad]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wad]"
+                      name="wad" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wap]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wap]"
+                      name="wap" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wat]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wat]"
+                      name="wat" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wave1]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wave1]"
+                      name="wave1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wave2]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wave2]"
+                      name="wave2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wa_vcf]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wa_vcf]"
+                      name="wa_vcf" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wa_cpl]"
+                      dataType="r4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[wa_cpl]"
+                      name="wa_cpl" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[apiTable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[apiTable]"
+                      name="apiTable" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[kFactor]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[kFactor]"
+                      name="kFactor" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[t4Transfer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[t4Transfer]"
+                      name="t4Transfer" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[tisTransfer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[tisTransfer]"
+                      name="tisTransfer" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[recalc]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[recalc]"
+                      name="recalc" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[fullTransaction]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[fullTransaction]"
+                      name="fullTransaction" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[rowguid]"
+                      dataType="guid"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[rowguid]"
+                      name="rowguid" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task 1.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task 1\Destination - tbl_ticket.Inputs[Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task 1\Source - tbl_ticket.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+</DTS:Executable>

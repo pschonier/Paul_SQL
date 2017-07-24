@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+  <labelLink xlink:type="extended" xlink:role="http://www.xbrl.org/2003/role/link">
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_Advertising" xlink:label="usfr-pte_Advertising" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_Advertising" xlink:to="usfr-pte_Advertising_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_Advertising_lbl_1" xml:lang="en">Noninterest Expense - Advertising</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_ChangeOtherCurrentAssets" xlink:label="usfr-pte_ChangeOtherCurrentAssets" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_ChangeOtherCurrentAssets" xlink:to="usfr-pte_ChangeOtherCurrentAssets_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_ChangeOtherCurrentAssets_lbl_1" xml:lang="en">Increase/(Decrease) in Other Operating Assets</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_ChangeOtherCurrentAssets_lbl_1" xml:lang="en">Other Operating Assets</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_ChangeOtherCurrentLiabilities" xlink:label="usfr-pte_ChangeOtherCurrentLiabilities" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_ChangeOtherCurrentLiabilities" xlink:to="usfr-pte_ChangeOtherCurrentLiabilities_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_ChangeOtherCurrentLiabilities_lbl_1" xml:lang="en">Increase/(Decrease) in Other Operating Liabilities</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_ChangeOtherCurrentLiabilities_lbl_1" xml:lang="en">Other Operating Liabilities</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_Depreciation" xlink:label="usfr-pte_Depreciation" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_Depreciation" xlink:to="usfr-pte_Depreciation_lbl_1" priority="1" />
+    <label id="label_Depreciation_1106602619136_1" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_Depreciation_lbl_1" xml:lang="en" xlink:title="label_Depreciation">Depreciation</label>
+    <label id="label_Depreciation_1106602632866_0" xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_Depreciation_lbl_1" xml:lang="en" xlink:title="label_Depreciation">Depreciation</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_MarketingAdvertisingExpensesAbstract" xlink:label="usfr-pte_MarketingAdvertisingExpensesAbstract" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_MarketingAdvertisingExpensesAbstract" xlink:to="usfr-pte_MarketingAdvertisingExpensesAbstract_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_MarketingAdvertisingExpensesAbstract_lbl_1" xml:lang="en">Noninterest Expense - Marketing and Advertising</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_Marketing" xlink:label="usfr-pte_Marketing" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_Marketing" xlink:to="usfr-pte_Marketing_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_Marketing_lbl_1" xml:lang="en">Noninterest Expense - Marketing</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_NoninterestExpenseMarketingAdvertising" xlink:label="usfr-pte_NoninterestExpenseMarketingAdvertising" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_NoninterestExpenseMarketingAdvertising" xlink:to="usfr-pte_NoninterestExpenseMarketingAdvertising_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_NoninterestExpenseMarketingAdvertising_lbl_1" xml:lang="en">Noninterest Expense - Marketing and Advertising</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/totalLabel" xlink:label="usfr-pte_NoninterestExpenseMarketingAdvertising_lbl_1" xml:lang="en">Noninterest Expense - Marketing and Advertising - Total</label>
+    <loc xlink:type="locator" xlink:href="../../../common/pte/2005-02-28/usfr-pte-2005-02-28.xsd#usfr-pte_OtherChangesNet" xlink:label="usfr-pte_OtherChangesNet" />
+    <labelArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label" xlink:from="usfr-pte_OtherChangesNet" xlink:to="usfr-pte_OtherChangesNet_lbl_1" priority="1" />
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/label" xlink:label="usfr-pte_OtherChangesNet_lbl_1" xml:lang="en">Other Increase/(Decrease) in Operating Assets and Liabilities, Net</label>
+    <label xlink:type="resource" xlink:role="http://www.xbrl.org/2003/role/terseLabel" xlink:label="usfr-pte_OtherChangesNet_lbl_1" xml:lang="en">Other Operating Assets and Liabilities</label>
+  </labelLink>
+</linkbase>
